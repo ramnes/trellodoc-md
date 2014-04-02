@@ -1,11 +1,4 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-docs.png)](../index.html)
-[Go to trello.com →](../../index.html)
-
-### Navigation
-
-  * [Trello documentation](../index.html) »
-
-# Authorizing via OAuth[¶](oauth.html#authorizing-via-oauth)
+# Authorizing via OAuth[¶](oauth.html.md#authorizing-via-oauth)
 
 The Trello API supports basic [OAuth](http://tools.ietf.org/html/rfc5849); you
 can use an OAuth library and the following URLs:
@@ -19,11 +12,12 @@ You'll also need your application secret (used to sign your requests). That's
 listed in the second box on
 [https://trello.com/1/appKey/generate](https://trello.com/1/appKey/generate).
 
-## Node.js[¶](oauth.html#node-js)
+## Node.js[¶](oauth.html.md#node-js)
 
 Here's an example in CoffeeScript:
 
     
+```coffee
     http = require('http')
     OAuth = require('oauth').OAuth
     url = require('url')
@@ -79,21 +73,7 @@ Here's an example in CoffeeScript:
     ).listen(port, domain)
     
     console.log "Server running at #{domain}:#{port}; hit #{domain}:#{port}/login"
-
-### Search
-
-### [Documentation Home](../index.html)
-
-  * [Authorizing via OAuth](oauth.html#)
-    * [Node.js](oauth.html#node-js)
-
-### Browse
-
-### You are here:
-
-  * [Trello documentation](../index.html)
-    * Authorizing via OAuth
+```
 
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

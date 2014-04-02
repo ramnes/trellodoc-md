@@ -1,14 +1,6 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-
-docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
+# board[¶](index.html.md#board)
 
-### Navigation
-
-  * [Trello documentation](../../index.html) »
-  * [API Reference (Beta)](../index.html) »
-
-# board[¶](index.html#board)
-
-## GET /1/boards/[board_id][¶](index.html#get-1-boards-board-id)
+## GET /1/boards/[board_id][¶](index.html.md#get-1-boards-board-id)
 
   * **Required permissions:** read
   * **Arguments**
@@ -353,7 +345,8 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
   * **Examples**
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046?lists=open&list_fields=name&fields=name,desc&key=[application_key]&token=[optional_auth_token]
-    
+
+```json    
     {
         "id": "4eea4ffc91e31d1746000046",
         "name": "Example Board",
@@ -369,8 +362,9 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
             "name": "Done"
         }]
     }
+```
 
-## GET /1/boards/[board_id]/[field][¶](index.html#get-1-boards-board-id-field)
+## GET /1/boards/[board_id]/[field][¶](index.html.md#get-1-boards-board-id-field)
 
   * **Arguments**
     * `field` (required)
@@ -398,64 +392,85 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/idOrganization?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "4efe2c2f2e1efe7a4c0002c9"
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/name?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "Example Board"
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/closed?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": false
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/desc?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "This board is used in the API examples"
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/descData?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": null
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/pinned?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": null
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/starred?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": null
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/invited?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": false
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/invitations?key=[application_key]&token=[optional_auth_token]
     
+```json
     []
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/url?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "https://trello.com/b/OXiBYZoj/example-board"
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/prefs?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "permissionLevel": "public",
         "voting": "members",
@@ -474,15 +489,19 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
         "canBePrivate": true,
         "canInvite": true
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/shortLink?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "OXiBYZoj"
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/memberships?key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4eea4ffc91e31d174600004d",
         "idMember": "4ee7deffe582acdec80000ac",
@@ -499,25 +518,33 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
         "memberType": "normal",
         "unconfirmed": false
     }]
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/powerUps?key=[application_key]&token=[optional_auth_token]
     
+```json
     []
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/dateLastActivity?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": null
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/subscribed?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": null
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/labelNames?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "yellow": "Low Priority",
         "red": "High Priority",
@@ -526,21 +553,25 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
         "green": "",
         "blue": ""
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/dateLastView?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": null
     }
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/shortUrl?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "https://trello.com/b/OXiBYZoj"
     }
+```
 
-## GET /1/boards/[board_id]/actions[¶](index.html#get-1-boards-board-id-
-actions)
+## GET /1/boards/[board_id]/actions[¶](index.html.md#get-1-boards-board-id-actions)
 
   * **Required permissions:** read
   * **Arguments**
@@ -672,6 +703,7 @@ actions)
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/actions?filter=addMemberToCard,removeMemberFromCard&key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4eea523791e31d17460002a0",
         "idMemberCreator": "4ee7deffe582acdec80000ac",
@@ -793,9 +825,9 @@ actions)
             "username": "joetester"
         }
     }]
+```
 
-## GET /1/boards/[board_id]/boardStars[¶](index.html#get-1-boards-board-id-
-boardstars)
+## GET /1/boards/[board_id]/boardStars[¶](index.html.md#get-1-boards-board-id-boardstars)
 
   * **Required permissions:** read
   * **Arguments**
@@ -805,7 +837,7 @@ boardstars)
         * `none`
         * `mine`
 
-## GET /1/boards/[board_id]/cards[¶](index.html#get-1-boards-board-id-cards)
+## GET /1/boards/[board_id]/cards[¶](index.html.md#get-1-boards-board-id-cards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -955,6 +987,7 @@ boardstars)
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/cards?fields=name,idList,url&key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4eea503791e31d1746000080",
         "name": "Finish my awesome application",
@@ -981,9 +1014,9 @@ boardstars)
         "idList": "4eea4ffc91e31d174600004c",
         "url": "https://trello.com/c/WOpDiqbn/2-find-out-where-the-trello-api-documentation-is"
     }]
+```
 
-## GET /1/boards/[board_id]/cards/[filter][¶](index.html#get-1-boards-board-
-id-cards-filter)
+## GET /1/boards/[board_id]/cards/[filter][¶](index.html.md#get-1-boards-board-id-cards-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -994,8 +1027,7 @@ id-cards-filter)
         * `closed`
         * `all`
 
-## GET /1/boards/[board_id]/cards/[idCard][¶](index.html#get-1-boards-board-
-id-cards-idcard)
+## GET /1/boards/[board_id]/cards/[idCard][¶](index.html.md#get-1-boards-board-id-cards-idcard)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1172,8 +1204,7 @@ id-cards-idcard)
         * `subscribed`
         * `url`
 
-## GET /1/boards/[board_id]/checklists[¶](index.html#get-1-boards-board-id-
-checklists)
+## GET /1/boards/[board_id]/checklists[¶](index.html.md#get-1-boards-board-id-checklists)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1239,6 +1270,7 @@ checklists)
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/checklists?key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4eea6ae1a5da7f5a49000092",
         "name": "API Checklist",
@@ -1390,8 +1422,9 @@ checklists)
             "pos": 49152
         }]
     }]
+```
 
-## GET /1/boards/[board_id]/lists[¶](index.html#get-1-boards-board-id-lists)
+## GET /1/boards/[board_id]/lists[¶](index.html.md#get-1-boards-board-id-lists)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1447,6 +1480,7 @@ checklists)
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/lists?cards=open&card_fields=name&fields=name&key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4eea4ffc91e31d174600004a",
         "name": "To Do Soon",
@@ -1475,9 +1509,9 @@ checklists)
             "name": "Find out where the Trello API documentation is"
         }]
     }]
+```
 
-## GET /1/boards/[board_id]/lists/[filter][¶](index.html#get-1-boards-board-
-id-lists-filter)
+## GET /1/boards/[board_id]/lists/[filter][¶](index.html.md#get-1-boards-board-id-lists-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -1487,8 +1521,7 @@ id-lists-filter)
         * `closed`
         * `all`
 
-## GET /1/boards/[board_id]/members[¶](index.html#get-1-boards-board-id-
-members)
+## GET /1/boards/[board_id]/members[¶](index.html.md#get-1-boards-board-id-members)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1522,6 +1555,7 @@ members)
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/members?key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4ee7df1be582acdec80000ae",
         "fullName": "Bob Tester",
@@ -1535,17 +1569,19 @@ members)
         "fullName": "Joe Tester",
         "username": "joetester"
     }]
+```
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/members?filter=admins&key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4ee7deffe582acdec80000ac",
         "fullName": "Joe Tester",
         "username": "joetester"
     }]
+```
 
-## GET /1/boards/[board_id]/members/[filter][¶](index.html#get-1-boards-board-
-id-members-filter)
+## GET /1/boards/[board_id]/members/[filter][¶](index.html.md#get-1-boards-board-id-members-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -1556,8 +1592,7 @@ id-members-filter)
         * `owners`
         * `all`
 
-## GET /1/boards/[board_id]/members/[idMember]/cards[¶](index.html#get-1
--boards-board-id-members-idmember-cards)
+## GET /1/boards/[board_id]/members/[idMember]/cards[¶](index.html.md#get-1-boards-board-id-members-idmember-cards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1735,8 +1770,7 @@ id-members-filter)
     * `idMember` (required)
       * **Valid Values:** An id, username, or organization name
 
-## GET /1/boards/[board_id]/membersInvited[¶](index.html#get-1-boards-board-
-id-membersinvited)
+## GET /1/boards/[board_id]/membersInvited[¶](index.html.md#get-1-boards-board-id-membersinvited)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1772,8 +1806,7 @@ id-membersinvited)
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/boards/[board_id]/membersInvited/[field][¶](index.html#get-1-boards-
-board-id-membersinvited-field)
+## GET /1/boards/[board_id]/membersInvited/[field][¶](index.html.md#get-1-boards-board-id-membersinvited-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1808,8 +1841,7 @@ board-id-membersinvited-field)
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/boards/[board_id]/memberships[¶](index.html#get-1-boards-board-id-
-memberships)
+## GET /1/boards/[board_id]/memberships[¶](index.html.md#get-1-boards-board-id-memberships)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1842,8 +1874,7 @@ memberships)
         * `url`
         * `username`
 
-## GET /1/boards/[board_id]/memberships/[idMembership][¶](index.html#get-1
--boards-board-id-memberships-idmembership)
+## GET /1/boards/[board_id]/memberships/[idMembership][¶](index.html.md#get-1-boards-board-id-memberships-idmembership)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1870,14 +1901,12 @@ memberships)
         * `url`
         * `username`
 
-## GET /1/boards/[board_id]/myPrefs[¶](index.html#get-1-boards-board-id-
-myprefs)
+## GET /1/boards/[board_id]/myPrefs[¶](index.html.md#get-1-boards-board-id-myprefs)
 
   * **Required permissions:** read
   * **Arguments:** None
 
-## GET /1/boards/[board_id]/organization[¶](index.html#get-1-boards-board-id-
-organization)
+## GET /1/boards/[board_id]/organization[¶](index.html.md#get-1-boards-board-id-organization)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1900,8 +1929,7 @@ organization)
         * `logoHash`
         * `premiumFeatures`
 
-## GET /1/boards/[board_id]/organization/[field][¶](index.html#get-1-boards-
-board-id-organization-field)
+## GET /1/boards/[board_id]/organization/[field][¶](index.html.md#get-1-boards-board-id-organization-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1923,7 +1951,7 @@ board-id-organization-field)
         * `logoHash`
         * `premiumFeatures`
 
-## PUT /1/boards/[board_id][¶](index.html#put-1-boards-board-id)
+## PUT /1/boards/[board_id][¶](index.html.md#put-1-boards-board-id)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1995,7 +2023,7 @@ board-id-organization-field)
     * `labelNames/blue` (optional)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/boards/[board_id]/closed[¶](index.html#put-1-boards-board-id-closed)
+## PUT /1/boards/[board_id]/closed[¶](index.html.md#put-1-boards-board-id-closed)
 
   * **Required permissions:** own, write
   * **Arguments**
@@ -2004,71 +2032,63 @@ board-id-organization-field)
         * `true`
         * `false`
 
-## PUT /1/boards/[board_id]/desc[¶](index.html#put-1-boards-board-id-desc)
+## PUT /1/boards/[board_id]/desc[¶](index.html.md#put-1-boards-board-id-desc)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/boards/[board_id]/idOrganization[¶](index.html#put-1-boards-board-
-id-idorganization)
+## PUT /1/boards/[board_id]/idOrganization[¶](index.html.md#put-1-boards-board-id-idorganization)
 
   * **Required permissions:** read
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/boards/[board_id]/labelNames/blue[¶](index.html#put-1-boards-board-
-id-labelnames-blue)
+## PUT /1/boards/[board_id]/labelNames/blue[¶](index.html.md#put-1-boards-board-id-labelnames-blue)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/boards/[board_id]/labelNames/green[¶](index.html#put-1-boards-board-
-id-labelnames-green)
+## PUT /1/boards/[board_id]/labelNames/green[¶](index.html.md#put-1-boards-board-id-labelnames-green)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/boards/[board_id]/labelNames/orange[¶](index.html#put-1-boards-
-board-id-labelnames-orange)
+## PUT /1/boards/[board_id]/labelNames/orange[¶](index.html.md#put-1-boards-board-id-labelnames-orange)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/boards/[board_id]/labelNames/purple[¶](index.html#put-1-boards-
-board-id-labelnames-purple)
+## PUT /1/boards/[board_id]/labelNames/purple[¶](index.html.md#put-1-boards-board-id-labelnames-purple)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/boards/[board_id]/labelNames/red[¶](index.html#put-1-boards-board-
-id-labelnames-red)
+## PUT /1/boards/[board_id]/labelNames/red[¶](index.html.md#put-1-boards-board-id-labelnames-red)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/boards/[board_id]/labelNames/yellow[¶](index.html#put-1-boards-
-board-id-labelnames-yellow)
+## PUT /1/boards/[board_id]/labelNames/yellow[¶](index.html.md#put-1-boards-board-id-labelnames-yellow)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/boards/[board_id]/members[¶](index.html#put-1-boards-board-id-
-members)
+## PUT /1/boards/[board_id]/members[¶](index.html.md#put-1-boards-board-id-members)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2083,8 +2103,7 @@ members)
         * `observer`
         * `admin`
 
-## PUT /1/boards/[board_id]/members/[idMember][¶](index.html#put-1-boards-
-board-id-members-idmember)
+## PUT /1/boards/[board_id]/members/[idMember][¶](index.html.md#put-1-boards-board-id-members-idmember)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2096,8 +2115,7 @@ board-id-members-idmember)
         * `observer`
         * `admin`
 
-## PUT /1/boards/[board_id]/memberships/[idMembership][¶](index.html#put-1
--boards-board-id-memberships-idmembership)
+## PUT /1/boards/[board_id]/memberships/[idMembership][¶](index.html.md#put-1-boards-board-id-memberships-idmembership)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2124,8 +2142,7 @@ board-id-members-idmember)
         * `url`
         * `username`
 
-## PUT /1/boards/[board_id]/myPrefs/emailPosition[¶](index.html#put-1-boards-
-board-id-myprefs-emailposition)
+## PUT /1/boards/[board_id]/myPrefs/emailPosition[¶](index.html.md#put-1-boards-board-id-myprefs-emailposition)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2134,16 +2151,14 @@ board-id-myprefs-emailposition)
         * `top`
         * `bottom`
 
-## PUT /1/boards/[board_id]/myPrefs/idEmailList[¶](index.html#put-1-boards-
-board-id-myprefs-idemaillist)
+## PUT /1/boards/[board_id]/myPrefs/idEmailList[¶](index.html.md#put-1-boards-board-id-myprefs-idemaillist)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** An id
 
-## PUT /1/boards/[board_id]/myPrefs/showListGuide[¶](index.html#put-1-boards-
-board-id-myprefs-showlistguide)
+## PUT /1/boards/[board_id]/myPrefs/showListGuide[¶](index.html.md#put-1-boards-board-id-myprefs-showlistguide)
 
   * **Required permissions:** read
   * **Arguments**
@@ -2152,8 +2167,7 @@ board-id-myprefs-showlistguide)
         * `true`
         * `false`
 
-## PUT /1/boards/[board_id]/myPrefs/showSidebar[¶](index.html#put-1-boards-
-board-id-myprefs-showsidebar)
+## PUT /1/boards/[board_id]/myPrefs/showSidebar[¶](index.html.md#put-1-boards-board-id-myprefs-showsidebar)
 
   * **Required permissions:** read
   * **Arguments**
@@ -2162,8 +2176,7 @@ board-id-myprefs-showsidebar)
         * `true`
         * `false`
 
-## PUT /1/boards/[board_id]/myPrefs/showSidebarActivity[¶](index.html#put-1
--boards-board-id-myprefs-showsidebaractivity)
+## PUT /1/boards/[board_id]/myPrefs/showSidebarActivity[¶](index.html.md#put-1-boards-board-id-myprefs-showsidebaractivity)
 
   * **Required permissions:** read
   * **Arguments**
@@ -2172,9 +2185,7 @@ board-id-myprefs-showsidebar)
         * `true`
         * `false`
 
-## PUT
-/1/boards/[board_id]/myPrefs/showSidebarBoardActions[¶](index.html#put-1
--boards-board-id-myprefs-showsidebarboardactions)
+## PUT /1/boards/[board_id]/myPrefs/showSidebarBoardActions[¶](index.html.md#put-1-boards-board-id-myprefs-showsidebarboardactions)
 
   * **Required permissions:** read
   * **Arguments**
@@ -2183,8 +2194,7 @@ board-id-myprefs-showsidebar)
         * `true`
         * `false`
 
-## PUT /1/boards/[board_id]/myPrefs/showSidebarMembers[¶](index.html#put-1
--boards-board-id-myprefs-showsidebarmembers)
+## PUT /1/boards/[board_id]/myPrefs/showSidebarMembers[¶](index.html.md#put-1-boards-board-id-myprefs-showsidebarmembers)
 
   * **Required permissions:** read
   * **Arguments**
@@ -2193,23 +2203,21 @@ board-id-myprefs-showsidebar)
         * `true`
         * `false`
 
-## PUT /1/boards/[board_id]/name[¶](index.html#put-1-boards-board-id-name)
+## PUT /1/boards/[board_id]/name[¶](index.html.md#put-1-boards-board-id-name)
 
   * **Required permissions:** own, write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## PUT /1/boards/[board_id]/prefs/background[¶](index.html#put-1-boards-board-
-id-prefs-background)
+## PUT /1/boards/[board_id]/prefs/background[¶](index.html.md#put-1-boards-board-id-prefs-background)
 
   * **Required permissions:** own, write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A standard background name, or the id of a custom background
 
-## PUT /1/boards/[board_id]/prefs/calendarFeedEnabled[¶](index.html#put-1
--boards-board-id-prefs-calendarfeedenabled)
+## PUT /1/boards/[board_id]/prefs/calendarFeedEnabled[¶](index.html.md#put-1-boards-board-id-prefs-calendarfeedenabled)
 
   * **Required permissions:** own, write
   * **Arguments**
@@ -2218,8 +2226,7 @@ id-prefs-background)
         * `true`
         * `false`
 
-## PUT /1/boards/[board_id]/prefs/cardAging[¶](index.html#put-1-boards-board-
-id-prefs-cardaging)
+## PUT /1/boards/[board_id]/prefs/cardAging[¶](index.html.md#put-1-boards-board-id-prefs-cardaging)
 
   * **Required permissions:** own, write
   * **Arguments**
@@ -2228,8 +2235,7 @@ id-prefs-cardaging)
         * `regular`
         * `pirate`
 
-## PUT /1/boards/[board_id]/prefs/cardCovers[¶](index.html#put-1-boards-board-
-id-prefs-cardcovers)
+## PUT /1/boards/[board_id]/prefs/cardCovers[¶](index.html.md#put-1-boards-board-id-prefs-cardcovers)
 
   * **Required permissions:** own, write
   * **Arguments**
@@ -2238,8 +2244,7 @@ id-prefs-cardcovers)
         * `true`
         * `false`
 
-## PUT /1/boards/[board_id]/prefs/comments[¶](index.html#put-1-boards-board-
-id-prefs-comments)
+## PUT /1/boards/[board_id]/prefs/comments[¶](index.html.md#put-1-boards-board-id-prefs-comments)
 
   * **Required permissions:** own, write
   * **Arguments**
@@ -2251,8 +2256,7 @@ id-prefs-comments)
         * `disabled`
         * `observers`
 
-## PUT /1/boards/[board_id]/prefs/invitations[¶](index.html#put-1-boards-
-board-id-prefs-invitations)
+## PUT /1/boards/[board_id]/prefs/invitations[¶](index.html.md#put-1-boards-board-id-prefs-invitations)
 
   * **Required permissions:** own, write
   * **Arguments**
@@ -2261,8 +2265,7 @@ board-id-prefs-invitations)
         * `members`
         * `admins`
 
-## PUT /1/boards/[board_id]/prefs/permissionLevel[¶](index.html#put-1-boards-
-board-id-prefs-permissionlevel)
+## PUT /1/boards/[board_id]/prefs/permissionLevel[¶](index.html.md#put-1-boards-board-id-prefs-permissionlevel)
 
   * **Required permissions:** own, write
   * **Arguments**
@@ -2272,8 +2275,7 @@ board-id-prefs-permissionlevel)
         * `org`
         * `public`
 
-## PUT /1/boards/[board_id]/prefs/selfJoin[¶](index.html#put-1-boards-board-
-id-prefs-selfjoin)
+## PUT /1/boards/[board_id]/prefs/selfJoin[¶](index.html.md#put-1-boards-board-id-prefs-selfjoin)
 
   * **Required permissions:** own, write
   * **Arguments**
@@ -2282,8 +2284,7 @@ id-prefs-selfjoin)
         * `true`
         * `false`
 
-## PUT /1/boards/[board_id]/prefs/voting[¶](index.html#put-1-boards-board-id-
-prefs-voting)
+## PUT /1/boards/[board_id]/prefs/voting[¶](index.html.md#put-1-boards-board-id-prefs-voting)
 
   * **Required permissions:** own, write
   * **Arguments**
@@ -2295,8 +2296,7 @@ prefs-voting)
         * `disabled`
         * `observers`
 
-## PUT /1/boards/[board_id]/subscribed[¶](index.html#put-1-boards-board-id-
-subscribed)
+## PUT /1/boards/[board_id]/subscribed[¶](index.html.md#put-1-boards-board-id-subscribed)
 
   * **Required permissions:** read
   * **Arguments**
@@ -2305,7 +2305,7 @@ subscribed)
         * `true`
         * `false`
 
-## POST /1/boards[¶](index.html#post-1-boards)
+## POST /1/boards[¶](index.html.md#post-1-boards)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2371,27 +2371,24 @@ subscribed)
         * `regular`
         * `pirate`
 
-## POST /1/boards/[board_id]/calendarKey/generate[¶](index.html#post-1-boards-
-board-id-calendarkey-generate)
+## POST /1/boards/[board_id]/calendarKey/generate[¶](index.html.md#post-1-boards-board-id-calendarkey-generate)
 
   * **Required permissions:** read
   * **Arguments:** None
 
-## POST /1/boards/[board_id]/checklists[¶](index.html#post-1-boards-board-id-
-checklists)
+## POST /1/boards/[board_id]/checklists[¶](index.html.md#post-1-boards-board-id-checklists)
 
   * **Required permissions:** write
   * **Arguments**
     * `name` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## POST /1/boards/[board_id]/emailKey/generate[¶](index.html#post-1-boards-
-board-id-emailkey-generate)
+## POST /1/boards/[board_id]/emailKey/generate[¶](index.html.md#post-1-boards-board-id-emailkey-generate)
 
   * **Required permissions:** write
   * **Arguments:** None
 
-## POST /1/boards/[board_id]/lists[¶](index.html#post-1-boards-board-id-lists)
+## POST /1/boards/[board_id]/lists[¶](index.html.md#post-1-boards-board-id-lists)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2401,14 +2398,12 @@ board-id-emailkey-generate)
       * **Default:** `top`
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## POST /1/boards/[board_id]/markAsViewed[¶](index.html#post-1-boards-board-
-id-markasviewed)
+## POST /1/boards/[board_id]/markAsViewed[¶](index.html.md#post-1-boards-board-id-markasviewed)
 
   * **Required permissions:** read
   * **Arguments:** None
 
-## POST /1/boards/[board_id]/powerUps[¶](index.html#post-1-boards-board-id-
-powerups)
+## POST /1/boards/[board_id]/powerUps[¶](index.html.md#post-1-boards-board-id-powerups)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2418,16 +2413,14 @@ powerups)
         * `cardAging`
         * `calendar`
 
-## DELETE /1/boards/[board_id]/members/[idMember][¶](index.html#delete-1
--boards-board-id-members-idmember)
+## DELETE /1/boards/[board_id]/members/[idMember][¶](index.html.md#delete-1-boards-board-id-members-idmember)
 
   * **Required permissions:** write
   * **Arguments**
     * `idMember` (required)
       * **Valid Values:** An id, username, or organization name
 
-## DELETE /1/boards/[board_id]/powerUps/[powerUp][¶](index.html#delete-1
--boards-board-id-powerups-powerup)
+## DELETE /1/boards/[board_id]/powerUps/[powerUp][¶](index.html.md#delete-1-boards-board-id-powerups-powerup)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2437,83 +2430,5 @@ powerups)
         * `cardAging`
         * `calendar`
 
-### Search
-
-### [Documentation Home](../../index.html)
-
-  * [board](index.html#)
-    * [GET /1/boards/[board_id]](index.html#get-1-boards-board-id)
-    * [GET /1/boards/[board_id]/[field]](index.html#get-1-boards-board-id-field)
-    * [GET /1/boards/[board_id]/actions](index.html#get-1-boards-board-id-actions)
-    * [GET /1/boards/[board_id]/boardStars](index.html#get-1-boards-board-id-boardstars)
-    * [GET /1/boards/[board_id]/cards](index.html#get-1-boards-board-id-cards)
-    * [GET /1/boards/[board_id]/cards/[filter]](index.html#get-1-boards-board-id-cards-filter)
-    * [GET /1/boards/[board_id]/cards/[idCard]](index.html#get-1-boards-board-id-cards-idcard)
-    * [GET /1/boards/[board_id]/checklists](index.html#get-1-boards-board-id-checklists)
-    * [GET /1/boards/[board_id]/lists](index.html#get-1-boards-board-id-lists)
-    * [GET /1/boards/[board_id]/lists/[filter]](index.html#get-1-boards-board-id-lists-filter)
-    * [GET /1/boards/[board_id]/members](index.html#get-1-boards-board-id-members)
-    * [GET /1/boards/[board_id]/members/[filter]](index.html#get-1-boards-board-id-members-filter)
-    * [GET /1/boards/[board_id]/members/[idMember]/cards](index.html#get-1-boards-board-id-members-idmember-cards)
-    * [GET /1/boards/[board_id]/membersInvited](index.html#get-1-boards-board-id-membersinvited)
-    * [GET /1/boards/[board_id]/membersInvited/[field]](index.html#get-1-boards-board-id-membersinvited-field)
-    * [GET /1/boards/[board_id]/memberships](index.html#get-1-boards-board-id-memberships)
-    * [GET /1/boards/[board_id]/memberships/[idMembership]](index.html#get-1-boards-board-id-memberships-idmembership)
-    * [GET /1/boards/[board_id]/myPrefs](index.html#get-1-boards-board-id-myprefs)
-    * [GET /1/boards/[board_id]/organization](index.html#get-1-boards-board-id-organization)
-    * [GET /1/boards/[board_id]/organization/[field]](index.html#get-1-boards-board-id-organization-field)
-    * [PUT /1/boards/[board_id]](index.html#put-1-boards-board-id)
-    * [PUT /1/boards/[board_id]/closed](index.html#put-1-boards-board-id-closed)
-    * [PUT /1/boards/[board_id]/desc](index.html#put-1-boards-board-id-desc)
-    * [PUT /1/boards/[board_id]/idOrganization](index.html#put-1-boards-board-id-idorganization)
-    * [PUT /1/boards/[board_id]/labelNames/blue](index.html#put-1-boards-board-id-labelnames-blue)
-    * [PUT /1/boards/[board_id]/labelNames/green](index.html#put-1-boards-board-id-labelnames-green)
-    * [PUT /1/boards/[board_id]/labelNames/orange](index.html#put-1-boards-board-id-labelnames-orange)
-    * [PUT /1/boards/[board_id]/labelNames/purple](index.html#put-1-boards-board-id-labelnames-purple)
-    * [PUT /1/boards/[board_id]/labelNames/red](index.html#put-1-boards-board-id-labelnames-red)
-    * [PUT /1/boards/[board_id]/labelNames/yellow](index.html#put-1-boards-board-id-labelnames-yellow)
-    * [PUT /1/boards/[board_id]/members](index.html#put-1-boards-board-id-members)
-    * [PUT /1/boards/[board_id]/members/[idMember]](index.html#put-1-boards-board-id-members-idmember)
-    * [PUT /1/boards/[board_id]/memberships/[idMembership]](index.html#put-1-boards-board-id-memberships-idmembership)
-    * [PUT /1/boards/[board_id]/myPrefs/emailPosition](index.html#put-1-boards-board-id-myprefs-emailposition)
-    * [PUT /1/boards/[board_id]/myPrefs/idEmailList](index.html#put-1-boards-board-id-myprefs-idemaillist)
-    * [PUT /1/boards/[board_id]/myPrefs/showListGuide](index.html#put-1-boards-board-id-myprefs-showlistguide)
-    * [PUT /1/boards/[board_id]/myPrefs/showSidebar](index.html#put-1-boards-board-id-myprefs-showsidebar)
-    * [PUT /1/boards/[board_id]/myPrefs/showSidebarActivity](index.html#put-1-boards-board-id-myprefs-showsidebaractivity)
-    * [PUT /1/boards/[board_id]/myPrefs/showSidebarBoardActions](index.html#put-1-boards-board-id-myprefs-showsidebarboardactions)
-    * [PUT /1/boards/[board_id]/myPrefs/showSidebarMembers](index.html#put-1-boards-board-id-myprefs-showsidebarmembers)
-    * [PUT /1/boards/[board_id]/name](index.html#put-1-boards-board-id-name)
-    * [PUT /1/boards/[board_id]/prefs/background](index.html#put-1-boards-board-id-prefs-background)
-    * [PUT /1/boards/[board_id]/prefs/calendarFeedEnabled](index.html#put-1-boards-board-id-prefs-calendarfeedenabled)
-    * [PUT /1/boards/[board_id]/prefs/cardAging](index.html#put-1-boards-board-id-prefs-cardaging)
-    * [PUT /1/boards/[board_id]/prefs/cardCovers](index.html#put-1-boards-board-id-prefs-cardcovers)
-    * [PUT /1/boards/[board_id]/prefs/comments](index.html#put-1-boards-board-id-prefs-comments)
-    * [PUT /1/boards/[board_id]/prefs/invitations](index.html#put-1-boards-board-id-prefs-invitations)
-    * [PUT /1/boards/[board_id]/prefs/permissionLevel](index.html#put-1-boards-board-id-prefs-permissionlevel)
-    * [PUT /1/boards/[board_id]/prefs/selfJoin](index.html#put-1-boards-board-id-prefs-selfjoin)
-    * [PUT /1/boards/[board_id]/prefs/voting](index.html#put-1-boards-board-id-prefs-voting)
-    * [PUT /1/boards/[board_id]/subscribed](index.html#put-1-boards-board-id-subscribed)
-    * [POST /1/boards](index.html#post-1-boards)
-    * [POST /1/boards/[board_id]/calendarKey/generate](index.html#post-1-boards-board-id-calendarkey-generate)
-    * [POST /1/boards/[board_id]/checklists](index.html#post-1-boards-board-id-checklists)
-    * [POST /1/boards/[board_id]/emailKey/generate](index.html#post-1-boards-board-id-emailkey-generate)
-    * [POST /1/boards/[board_id]/lists](index.html#post-1-boards-board-id-lists)
-    * [POST /1/boards/[board_id]/markAsViewed](index.html#post-1-boards-board-id-markasviewed)
-    * [POST /1/boards/[board_id]/powerUps](index.html#post-1-boards-board-id-powerups)
-    * [DELETE /1/boards/[board_id]/members/[idMember]](index.html#delete-1-boards-board-id-members-idmember)
-    * [DELETE /1/boards/[board_id]/powerUps/[powerUp]](index.html#delete-1-boards-board-id-powerups-powerup)
-
-### Browse
-
-  * Prev: [action](../action/index.html)
-  * Next: [card](../card/index.html)
-
-### You are here:
-
-  * [Trello documentation](../../index.html)
-    * [API Reference (Beta)](../index.html)
-      * board
-
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

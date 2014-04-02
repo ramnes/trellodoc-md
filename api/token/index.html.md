@@ -1,14 +1,6 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-
-docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
+# token[¶](index.html.md#token)
 
-### Navigation
-
-  * [Trello documentation](../../index.html) »
-  * [API Reference (Beta)](../index.html) »
-
-# token[¶](index.html#token)
-
-## GET /1/tokens/[token][¶](index.html#get-1-tokens-token)
+## GET /1/tokens/[token][¶](index.html.md#get-1-tokens-token)
 
   * **Required permissions:** read
   * **Arguments**
@@ -28,7 +20,8 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
   * **Examples**
     
     https://api.trello.com/1/tokens/91a6408305c1e5ec1b0b306688bc2e2f8fe67abf6a2ecec38c17e5b894fcf866?key=[application_key]&token=[optional_auth_token]
-    
+
+```json    
     {
         "id": "4ee7f1e00081da1fcb00014b",
         "identifier": "",
@@ -42,8 +35,9 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
             "write": false
         }]
     }
+```
 
-## GET /1/tokens/[token]/[field][¶](index.html#get-1-tokens-token-field)
+## GET /1/tokens/[token]/[field][¶](index.html.md#get-1-tokens-token-field)
 
   * **Arguments**
     * `field` (required)
@@ -54,7 +48,7 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
         * `dateExpires`
         * `permissions`
 
-## GET /1/tokens/[token]/member[¶](index.html#get-1-tokens-token-member)
+## GET /1/tokens/[token]/member[¶](index.html.md#get-1-tokens-token-member)
 
   * **Required permissions:** read
   * **Arguments**
@@ -90,8 +84,7 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/tokens/[token]/member/[field][¶](index.html#get-1-tokens-token-
-member-field)
+## GET /1/tokens/[token]/member/[field][¶](index.html.md#get-1-tokens-token-member-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -126,20 +119,19 @@ member-field)
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/tokens/[token]/webhooks[¶](index.html#get-1-tokens-token-webhooks)
+## GET /1/tokens/[token]/webhooks[¶](index.html.md#get-1-tokens-token-webhooks)
 
   * **Required permissions:** read
   * **Arguments:** None
 
-## GET /1/tokens/[token]/webhooks/[idWebhook][¶](index.html#get-1-tokens-
-token-webhooks-idwebhook)
+## GET /1/tokens/[token]/webhooks/[idWebhook][¶](index.html.md#get-1-tokens-token-webhooks-idwebhook)
 
   * **Required permissions:** read
   * **Arguments**
     * `idWebhook` (required)
       * **Valid Values:** The id of the webhook
 
-## PUT /1/tokens/[token]/webhooks[¶](index.html#put-1-tokens-token-webhooks)
+## PUT /1/tokens/[token]/webhooks[¶](index.html.md#put-1-tokens-token-webhooks)
 
   * **Required permissions:** read
   * **Arguments**
@@ -150,7 +142,7 @@ token-webhooks-idwebhook)
     * `idModel` (required)
       * **Valid Values:** id of the model to be monitored
 
-## POST /1/tokens/[token]/webhooks[¶](index.html#post-1-tokens-token-webhooks)
+## POST /1/tokens/[token]/webhooks[¶](index.html.md#post-1-tokens-token-webhooks)
 
   * **Required permissions:** read
   * **Arguments**
@@ -161,46 +153,17 @@ token-webhooks-idwebhook)
     * `idModel` (required)
       * **Valid Values:** id of the model to be monitored
 
-## DELETE /1/tokens/[token][¶](index.html#delete-1-tokens-token)
+## DELETE /1/tokens/[token][¶](index.html.md#delete-1-tokens-token)
 
   * **Required permissions:** write
   * **Arguments:** None
 
-## DELETE /1/tokens/[token]/webhooks/[idWebhook][¶](index.html#delete-1
--tokens-token-webhooks-idwebhook)
+## DELETE /1/tokens/[token]/webhooks/[idWebhook][¶](index.html.md#delete-1-tokens-token-webhooks-idwebhook)
 
   * **Required permissions:** read
   * **Arguments**
     * `idWebhook` (required)
       * **Valid Values:** The id of the webhook
 
-### Search
-
-### [Documentation Home](../../index.html)
-
-  * [token](index.html#)
-    * [GET /1/tokens/[token]](index.html#get-1-tokens-token)
-    * [GET /1/tokens/[token]/[field]](index.html#get-1-tokens-token-field)
-    * [GET /1/tokens/[token]/member](index.html#get-1-tokens-token-member)
-    * [GET /1/tokens/[token]/member/[field]](index.html#get-1-tokens-token-member-field)
-    * [GET /1/tokens/[token]/webhooks](index.html#get-1-tokens-token-webhooks)
-    * [GET /1/tokens/[token]/webhooks/[idWebhook]](index.html#get-1-tokens-token-webhooks-idwebhook)
-    * [PUT /1/tokens/[token]/webhooks](index.html#put-1-tokens-token-webhooks)
-    * [POST /1/tokens/[token]/webhooks](index.html#post-1-tokens-token-webhooks)
-    * [DELETE /1/tokens/[token]](index.html#delete-1-tokens-token)
-    * [DELETE /1/tokens/[token]/webhooks/[idWebhook]](index.html#delete-1-tokens-token-webhooks-idwebhook)
-
-### Browse
-
-  * Prev: [search](../search/index.html)
-  * Next: [type](../type/index.html)
-
-### You are here:
-
-  * [Trello documentation](../../index.html)
-    * [API Reference (Beta)](../index.html)
-      * token
-
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

@@ -1,15 +1,9 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-docs.png)](../index.html)
-[Go to trello.com →](../../index.html)
-
-### Navigation
-
-  * [Trello documentation](../index.html) »
-
-# client.js[¶](clientjs.html#client-js)
+# client.js[¶](clientjs.html.md#client-js)
 
 Add the Trello API client library to your page like so:
 
     
+```html
     <head>
       <!-- ...  -->
     
@@ -19,11 +13,12 @@ Add the Trello API client library to your page like so:
     
       <!-- ...  -->
     </head>
+```
 
 This will create a `Trello` object, which you can use to interact with the
 Trello API.
 
-## Authorizing[¶](clientjs.html#authorizing)
+## Authorizing[¶](clientjs.html.md#authorizing)
 
 Call `Trello.authorize(opts)` with the following options:
 
@@ -58,7 +53,7 @@ If using `type: "redirect"`, the token will be returned to the current
 `location.href`. When it is returned, call `authorize` with `interactive:
 false` to get the token.
 
-## Using the API[¶](clientjs.html#using-the-api)
+## Using the API[¶](clientjs.html.md#using-the-api)
 
 You can use the API via a single call: `Trello.rest(method, path[, params],
 success, error)`
@@ -87,7 +82,7 @@ An alias for `delete`:
 
   * `Trello.del(path[, params], success, error)`
 
-And one for [``](clientjs.html#id1)GET``ting on each collection:
+And one for [``](clientjs.html.md#id1)GET``ting on each collection:
 
   * `Trello.actions.get(id[, params], success, error)`
   * `Trello.cards.get(id[, params], success, error)`
@@ -97,21 +92,5 @@ And one for [``](clientjs.html#id1)GET``ting on each collection:
   * `Trello.members.get(id[, params], success, error)`
   * `Trello.organizations.get(id[, params], success, error)`
 
-### Search
-
-### [Documentation Home](../index.html)
-
-  * [client.js](clientjs.html#)
-    * [Authorizing](clientjs.html#authorizing)
-    * [Using the API](clientjs.html#using-the-api)
-
-### Browse
-
-### You are here:
-
-  * [Trello documentation](../index.html)
-    * client.js
-
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

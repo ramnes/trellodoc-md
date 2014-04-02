@@ -1,15 +1,6 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-
-docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
+# organization[¶](index.html.md#organization)
 
-### Navigation
-
-  * [Trello documentation](../../index.html) »
-  * [API Reference (Beta)](../index.html) »
-
-# organization[¶](index.html#organization)
-
-## GET /1/organizations/[idOrg or name][¶](index.html#get-1-organizations-
-idorg-or-name)
+## GET /1/organizations/[idOrg or name][¶](index.html.md#get-1-organizations-idorg-or-name)
 
   * **Required permissions:** read
   * **Arguments**
@@ -301,6 +292,7 @@ idorg-or-name)
     
     https://api.trello.com/1/organizations/publicorg?members=all&member_fields=username,fullName&fields=name,desc&key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "id": "4ee7e59ae582acdec8000291",
         "name": "publicorg",
@@ -323,9 +315,9 @@ idorg-or-name)
             "fullName": "Invite Ghost 8"
         }]
     }
+```
 
-## GET /1/organizations/[idOrg or name]/[field][¶](index.html#get-1
--organizations-idorg-or-name-field)
+## GET /1/organizations/[idOrg or name]/[field][¶](index.html.md#get-1-organizations-idorg-or-name-field)
 
   * **Arguments**
     * `field` (required)
@@ -349,40 +341,53 @@ idorg-or-name)
     
     https://api.trello.com/1/organizations/exampleorg/name?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "exampleorg"
     }
+```
     
     https://api.trello.com/1/organizations/exampleorg/descData?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": null
     }
+```
     
     https://api.trello.com/1/organizations/exampleorg/desc?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "This is a sample organization"
     }
+```
     
     https://api.trello.com/1/organizations/exampleorg/idBoards?key=[application_key]&token=[optional_auth_token]
     
+```json
     ["4eea4ffc91e31d1746000046"]
+```
     
     https://api.trello.com/1/organizations/exampleorg/displayName?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "Example Org"
     }
+```
     
     https://api.trello.com/1/organizations/exampleorg/invited?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": false
     }
+```
     
     https://api.trello.com/1/organizations/exampleorg/prefs?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "permissionLevel": "public",
         "orgInviteRestrict": [],
@@ -394,52 +399,68 @@ idorg-or-name)
             "public": "org"
         }
     }
+```
     
     https://api.trello.com/1/organizations/exampleorg/memberships?key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4efe2c2f2e1efe7a4c0002cd",
         "idMember": "4ee7deffe582acdec80000ac",
         "memberType": "admin",
         "unconfirmed": false
     }]
+```
     
     https://api.trello.com/1/organizations/exampleorg/invitations?key=[application_key]&token=[optional_auth_token]
     
+```json
     []
+```
     
     https://api.trello.com/1/organizations/exampleorg/powerUps?key=[application_key]&token=[optional_auth_token]
     
+```json
     []
+```
     
     https://api.trello.com/1/organizations/exampleorg/url?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "https://trello.com/exampleorg"
     }
+```
     
     https://api.trello.com/1/organizations/exampleorg/products?key=[application_key]&token=[optional_auth_token]
     
+```json
     []
+```
     
     https://api.trello.com/1/organizations/exampleorg/website?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "http://example.org"
     }
+```
     
     https://api.trello.com/1/organizations/exampleorg/logoHash?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": null
     }
+```
     
     https://api.trello.com/1/organizations/exampleorg/premiumFeatures?key=[application_key]&token=[optional_auth_token]
     
+```json
     []
+```
 
-## GET /1/organizations/[idOrg or name]/actions[¶](index.html#get-1
--organizations-idorg-or-name-actions)
+## GET /1/organizations/[idOrg or name]/actions[¶](index.html.md#get-1-organizations-idorg-or-name-actions)
 
   * **Required permissions:** read
   * **Arguments**
@@ -571,6 +592,7 @@ idorg-or-name)
     
     https://api.trello.com/1/organizations/exampleorg/actions?key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4efe2c2f2e1efe7a4c0002cb",
         "idMemberCreator": "4ee7deffe582acdec80000ac",
@@ -590,9 +612,9 @@ idorg-or-name)
             "username": "joetester"
         }
     }]
+```
 
-## GET /1/organizations/[idOrg or name]/boards[¶](index.html#get-1
--organizations-idorg-or-name-boards)
+## GET /1/organizations/[idOrg or name]/boards[¶](index.html.md#get-1-organizations-idorg-or-name-boards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -747,6 +769,7 @@ idorg-or-name)
     
     https://api.trello.com/1/organizations/exampleorg/boards?key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4eea4ffc91e31d1746000046",
         "name": "Example Board",
@@ -808,9 +831,9 @@ idorg-or-name)
         "dateLastView": null,
         "shortUrl": "https://trello.com/b/OXiBYZoj"
     }]
+```
 
-## GET /1/organizations/[idOrg or name]/boards/[filter][¶](index.html#get-1
--organizations-idorg-or-name-boards-filter)
+## GET /1/organizations/[idOrg or name]/boards/[filter][¶](index.html.md#get-1-organizations-idorg-or-name-boards-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -824,8 +847,7 @@ idorg-or-name)
         * `unpinned`
         * `starred`
 
-## GET /1/organizations/[idOrg or name]/members[¶](index.html#get-1
--organizations-idorg-or-name-members)
+## GET /1/organizations/[idOrg or name]/members[¶](index.html.md#get-1-organizations-idorg-or-name-members)
 
   * **Required permissions:** read
   * **Arguments**
@@ -859,22 +881,25 @@ idorg-or-name)
     
     https://api.trello.com/1/organizations/exampleorg/members?filter=admins&key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4ee7deffe582acdec80000ac",
         "fullName": "Joe Tester",
         "username": "joetester"
     }]
+```
     
     https://api.trello.com/1/organizations/exampleorg/members?key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4ee7deffe582acdec80000ac",
         "fullName": "Joe Tester",
         "username": "joetester"
     }]
+```
 
-## GET /1/organizations/[idOrg or name]/members/[filter][¶](index.html#get-1
--organizations-idorg-or-name-members-filter)
+## GET /1/organizations/[idOrg or name]/members/[filter][¶](index.html.md#get-1-organizations-idorg-or-name-members-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -885,9 +910,7 @@ idorg-or-name)
         * `owners`
         * `all`
 
-## GET /1/organizations/[idOrg or
-name]/members/[idMember]/cards[¶](index.html#get-1-organizations-idorg-or-
-name-members-idmember-cards)
+## GET /1/organizations/[idOrg or name]/members/[idMember]/cards[¶](index.html.md#get-1-organizations-idorg-or-name-members-idmember-cards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1065,8 +1088,7 @@ name-members-idmember-cards)
     * `idMember` (required)
       * **Valid Values:** An id, username, or organization name
 
-## GET /1/organizations/[idOrg or name]/membersInvited[¶](index.html#get-1
--organizations-idorg-or-name-membersinvited)
+## GET /1/organizations/[idOrg or name]/membersInvited[¶](index.html.md#get-1-organizations-idorg-or-name-membersinvited)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1102,9 +1124,7 @@ name-members-idmember-cards)
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/organizations/[idOrg or
-name]/membersInvited/[field][¶](index.html#get-1-organizations-idorg-or-name-
-membersinvited-field)
+## GET /1/organizations/[idOrg or name]/membersInvited/[field][¶](index.html.md#get-1-organizations-idorg-or-name-membersinvited-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1139,8 +1159,7 @@ membersinvited-field)
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/organizations/[idOrg or name]/memberships[¶](index.html#get-1
--organizations-idorg-or-name-memberships)
+## GET /1/organizations/[idOrg or name]/memberships[¶](index.html.md#get-1-organizations-idorg-or-name-memberships)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1173,9 +1192,7 @@ membersinvited-field)
         * `url`
         * `username`
 
-## GET /1/organizations/[idOrg or
-name]/memberships/[idMembership][¶](index.html#get-1-organizations-idorg-or-
-name-memberships-idmembership)
+## GET /1/organizations/[idOrg or name]/memberships/[idMembership][¶](index.html.md#get-1-organizations-idorg-or-name-memberships-idmembership)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1202,8 +1219,7 @@ name-memberships-idmembership)
         * `url`
         * `username`
 
-## PUT /1/organizations/[idOrg or name][¶](index.html#put-1-organizations-
-idorg-or-name)
+## PUT /1/organizations/[idOrg or name][¶](index.html.md#put-1-organizations-idorg-or-name)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1243,24 +1259,21 @@ idorg-or-name)
         * `private`
         * `public`
 
-## PUT /1/organizations/[idOrg or name]/desc[¶](index.html#put-1
--organizations-idorg-or-name-desc)
+## PUT /1/organizations/[idOrg or name]/desc[¶](index.html.md#put-1-organizations-idorg-or-name-desc)
 
   * **Required permissions:** write, own
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/organizations/[idOrg or name]/displayName[¶](index.html#put-1
--organizations-idorg-or-name-displayname)
+## PUT /1/organizations/[idOrg or name]/displayName[¶](index.html.md#put-1-organizations-idorg-or-name-displayname)
 
   * **Required permissions:** write, own
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A string with a length of at least 1. Cannot begin or end with a space.
 
-## PUT /1/organizations/[idOrg or name]/members[¶](index.html#put-1
--organizations-idorg-or-name-members)
+## PUT /1/organizations/[idOrg or name]/members[¶](index.html.md#put-1-organizations-idorg-or-name-members)
 
   * **Required permissions:** write
   * **Arguments**
@@ -1275,8 +1288,7 @@ idorg-or-name)
         * `observer`
         * `admin`
 
-## PUT /1/organizations/[idOrg or name]/members/[idMember][¶](index.html#put-1
--organizations-idorg-or-name-members-idmember)
+## PUT /1/organizations/[idOrg or name]/members/[idMember][¶](index.html.md#put-1-organizations-idorg-or-name-members-idmember)
 
   * **Required permissions:** write
   * **Arguments**
@@ -1288,9 +1300,7 @@ idorg-or-name)
         * `observer`
         * `admin`
 
-## PUT /1/organizations/[idOrg or
-name]/members/[idMember]/deactivated[¶](index.html#put-1-organizations-idorg-
-or-name-members-idmember-deactivated)
+## PUT /1/organizations/[idOrg or name]/members/[idMember]/deactivated[¶](index.html.md#put-1-organizations-idorg-or-name-members-idmember-deactivated)
 
   * **Required permissions:** write, own, deactivated
   * **Arguments**
@@ -1301,9 +1311,7 @@ or-name-members-idmember-deactivated)
         * `true`
         * `false`
 
-## PUT /1/organizations/[idOrg or
-name]/memberships/[idMembership][¶](index.html#put-1-organizations-idorg-or-
-name-memberships-idmembership)
+## PUT /1/organizations/[idOrg or name]/memberships/[idMembership][¶](index.html.md#put-1-organizations-idorg-or-name-memberships-idmembership)
 
   * **Required permissions:** write
   * **Arguments**
@@ -1330,26 +1338,21 @@ name-memberships-idmembership)
         * `url`
         * `username`
 
-## PUT /1/organizations/[idOrg or name]/name[¶](index.html#put-1
--organizations-idorg-or-name-name)
+## PUT /1/organizations/[idOrg or name]/name[¶](index.html.md#put-1-organizations-idorg-or-name-name)
 
   * **Required permissions:** write, own
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A string with a length of at least 3. Only lowercase letters, underscores, and numbers are allowed. Must be unique.
 
-## PUT /1/organizations/[idOrg or
-name]/prefs/associatedDomain[¶](index.html#put-1-organizations-idorg-or-name-
-prefs-associateddomain)
+## PUT /1/organizations/[idOrg or name]/prefs/associatedDomain[¶](index.html.md#put-1-organizations-idorg-or-name-prefs-associateddomain)
 
   * **Required permissions:** write, own, googleApps
   * **Arguments**
     * `value` (required)
       * **Valid Values:** The google apps domain to link this org to.
 
-## PUT /1/organizations/[idOrg or
-name]/prefs/boardVisibilityRestrict/org[¶](index.html#put-1-organizations-
-idorg-or-name-prefs-boardvisibilityrestrict-org)
+## PUT /1/organizations/[idOrg or name]/prefs/boardVisibilityRestrict/org[¶](index.html.md#put-1-organizations-idorg-or-name-prefs-boardvisibilityrestrict-org)
 
   * **Required permissions:** write, own, restrictVis
   * **Arguments**
@@ -1359,9 +1362,7 @@ idorg-or-name-prefs-boardvisibilityrestrict-org)
         * `admin`
         * `org`
 
-## PUT /1/organizations/[idOrg or
-name]/prefs/boardVisibilityRestrict/private[¶](index.html#put-1-organizations-
-idorg-or-name-prefs-boardvisibilityrestrict-private)
+## PUT /1/organizations/[idOrg or name]/prefs/boardVisibilityRestrict/private[¶](index.html.md#put-1-organizations-idorg-or-name-prefs-boardvisibilityrestrict-private)
 
   * **Required permissions:** write, own, restrictVis
   * **Arguments**
@@ -1371,9 +1372,7 @@ idorg-or-name-prefs-boardvisibilityrestrict-private)
         * `admin`
         * `org`
 
-## PUT /1/organizations/[idOrg or
-name]/prefs/boardVisibilityRestrict/public[¶](index.html#put-1-organizations-
-idorg-or-name-prefs-boardvisibilityrestrict-public)
+## PUT /1/organizations/[idOrg or name]/prefs/boardVisibilityRestrict/public[¶](index.html.md#put-1-organizations-idorg-or-name-prefs-boardvisibilityrestrict-public)
 
   * **Required permissions:** write, own, restrictVis
   * **Arguments**
@@ -1383,9 +1382,7 @@ idorg-or-name-prefs-boardvisibilityrestrict-public)
         * `admin`
         * `org`
 
-## PUT /1/organizations/[idOrg or
-name]/prefs/externalMembersDisabled[¶](index.html#put-1-organizations-idorg-
-or-name-prefs-externalmembersdisabled)
+## PUT /1/organizations/[idOrg or name]/prefs/externalMembersDisabled[¶](index.html.md#put-1-organizations-idorg-or-name-prefs-externalmembersdisabled)
 
   * **Required permissions:** write, own, disableExternalMembers
   * **Arguments**
@@ -1394,18 +1391,14 @@ or-name-prefs-externalmembersdisabled)
         * `true`
         * `false`
 
-## PUT /1/organizations/[idOrg or
-name]/prefs/orgInviteRestrict[¶](index.html#put-1-organizations-idorg-or-name-
-prefs-orginviterestrict)
+## PUT /1/organizations/[idOrg or name]/prefs/orgInviteRestrict[¶](index.html.md#put-1-organizations-idorg-or-name-prefs-orginviterestrict)
 
   * **Required permissions:** write, own, inviteOrg
   * **Arguments**
     * `value` (required)
       * **Valid Values:** An email address with optional expansion tokens
 
-## PUT /1/organizations/[idOrg or
-name]/prefs/permissionLevel[¶](index.html#put-1-organizations-idorg-or-name-
-prefs-permissionlevel)
+## PUT /1/organizations/[idOrg or name]/prefs/permissionLevel[¶](index.html.md#put-1-organizations-idorg-or-name-prefs-permissionlevel)
 
   * **Required permissions:** write, own
   * **Arguments**
@@ -1414,15 +1407,14 @@ prefs-permissionlevel)
         * `private`
         * `public`
 
-## PUT /1/organizations/[idOrg or name]/website[¶](index.html#put-1
--organizations-idorg-or-name-website)
+## PUT /1/organizations/[idOrg or name]/website[¶](index.html.md#put-1-organizations-idorg-or-name-website)
 
   * **Required permissions:** write, own
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A URL starting with [http://](http://) or [https://](https://) or `null`
 
-## POST /1/organizations[¶](index.html#post-1-organizations)
+## POST /1/organizations[¶](index.html.md#post-1-organizations)
 
   * **Required permissions:** write
   * **Arguments**
@@ -1435,122 +1427,55 @@ prefs-permissionlevel)
     * `website` (optional)
       * **Valid Values:** A URL starting with [http://](http://) or [https://](https://) or `null`
 
-## POST /1/organizations/[idOrg or name]/logo[¶](index.html#post-1
--organizations-idorg-or-name-logo)
+## POST /1/organizations/[idOrg or name]/logo[¶](index.html.md#post-1-organizations-idorg-or-name-logo)
 
   * **Required permissions:** own, logo
   * **Arguments**
     * `file` (required)
       * **Valid Values:** A file
 
-## POST /1/organizations/[idOrg or name]/unpaidAccount[¶](index.html#post-1
--organizations-idorg-or-name-unpaidaccount)
+## POST /1/organizations/[idOrg or name]/unpaidAccount[¶](index.html.md#post-1-organizations-idorg-or-name-unpaidaccount)
 
   * **Required permissions:** own, write
   * **Arguments**
     * `products` (required)
       * **Valid Values:** An array of product ids
 
-## DELETE /1/organizations/[idOrg or name][¶](index.html#delete-1
--organizations-idorg-or-name)
+## DELETE /1/organizations/[idOrg or name][¶](index.html.md#delete-1-organizations-idorg-or-name)
 
   * **Required permissions:** write
   * **Arguments:** None
 
-## DELETE /1/organizations/[idOrg or name]/logo[¶](index.html#delete-1
--organizations-idorg-or-name-logo)
+## DELETE /1/organizations/[idOrg or name]/logo[¶](index.html.md#delete-1-organizations-idorg-or-name-logo)
 
   * **Required permissions:** own, logo
   * **Arguments:** None
 
-## DELETE /1/organizations/[idOrg or
-name]/members/[idMember][¶](index.html#delete-1-organizations-idorg-or-name-
-members-idmember)
+## DELETE /1/organizations/[idOrg or name]/members/[idMember][¶](index.html.md#delete-1-organizations-idorg-or-name-members-idmember)
 
   * **Required permissions:** write
   * **Arguments**
     * `idMember` (required)
       * **Valid Values:** An id, username, or organization name
 
-## DELETE /1/organizations/[idOrg or
-name]/members/[idMember]/all[¶](index.html#delete-1-organizations-idorg-or-
-name-members-idmember-all)
+## DELETE /1/organizations/[idOrg or name]/members/[idMember]/all[¶](index.html.md#delete-1-organizations-idorg-or-name-members-idmember-all)
 
   * **Required permissions:** write, own, removal
   * **Arguments**
     * `idMember` (required)
       * **Valid Values:** An id, username, or organization name
 
-## DELETE /1/organizations/[idOrg or
-name]/prefs/associatedDomain[¶](index.html#delete-1-organizations-idorg-or-
-name-prefs-associateddomain)
+## DELETE /1/organizations/[idOrg or name]/prefs/associatedDomain[¶](index.html.md#delete-1-organizations-idorg-or-name-prefs-associateddomain)
 
   * **Required permissions:** write, own, googleApps
   * **Arguments:** None
 
-## DELETE /1/organizations/[idOrg or
-name]/prefs/orgInviteRestrict[¶](index.html#delete-1-organizations-idorg-or-
-name-prefs-orginviterestrict)
+## DELETE /1/organizations/[idOrg or name]/prefs/orgInviteRestrict[¶](index.html.md#delete-1-organizations-idorg-or-name-prefs-orginviterestrict)
 
   * **Required permissions:** write, own, inviteOrg
   * **Arguments**
     * `value` (required)
       * **Valid Values:** An email address with optional expansion tokens
 
-### Search
-
-### [Documentation Home](../../index.html)
-
-  * [organization](index.html#)
-    * [GET /1/organizations/[idOrg or name]](index.html#get-1-organizations-idorg-or-name)
-    * [GET /1/organizations/[idOrg or name]/[field]](index.html#get-1-organizations-idorg-or-name-field)
-    * [GET /1/organizations/[idOrg or name]/actions](index.html#get-1-organizations-idorg-or-name-actions)
-    * [GET /1/organizations/[idOrg or name]/boards](index.html#get-1-organizations-idorg-or-name-boards)
-    * [GET /1/organizations/[idOrg or name]/boards/[filter]](index.html#get-1-organizations-idorg-or-name-boards-filter)
-    * [GET /1/organizations/[idOrg or name]/members](index.html#get-1-organizations-idorg-or-name-members)
-    * [GET /1/organizations/[idOrg or name]/members/[filter]](index.html#get-1-organizations-idorg-or-name-members-filter)
-    * [GET /1/organizations/[idOrg or name]/members/[idMember]/cards](index.html#get-1-organizations-idorg-or-name-members-idmember-cards)
-    * [GET /1/organizations/[idOrg or name]/membersInvited](index.html#get-1-organizations-idorg-or-name-membersinvited)
-    * [GET /1/organizations/[idOrg or name]/membersInvited/[field]](index.html#get-1-organizations-idorg-or-name-membersinvited-field)
-    * [GET /1/organizations/[idOrg or name]/memberships](index.html#get-1-organizations-idorg-or-name-memberships)
-    * [GET /1/organizations/[idOrg or name]/memberships/[idMembership]](index.html#get-1-organizations-idorg-or-name-memberships-idmembership)
-    * [PUT /1/organizations/[idOrg or name]](index.html#put-1-organizations-idorg-or-name)
-    * [PUT /1/organizations/[idOrg or name]/desc](index.html#put-1-organizations-idorg-or-name-desc)
-    * [PUT /1/organizations/[idOrg or name]/displayName](index.html#put-1-organizations-idorg-or-name-displayname)
-    * [PUT /1/organizations/[idOrg or name]/members](index.html#put-1-organizations-idorg-or-name-members)
-    * [PUT /1/organizations/[idOrg or name]/members/[idMember]](index.html#put-1-organizations-idorg-or-name-members-idmember)
-    * [PUT /1/organizations/[idOrg or name]/members/[idMember]/deactivated](index.html#put-1-organizations-idorg-or-name-members-idmember-deactivated)
-    * [PUT /1/organizations/[idOrg or name]/memberships/[idMembership]](index.html#put-1-organizations-idorg-or-name-memberships-idmembership)
-    * [PUT /1/organizations/[idOrg or name]/name](index.html#put-1-organizations-idorg-or-name-name)
-    * [PUT /1/organizations/[idOrg or name]/prefs/associatedDomain](index.html#put-1-organizations-idorg-or-name-prefs-associateddomain)
-    * [PUT /1/organizations/[idOrg or name]/prefs/boardVisibilityRestrict/org](index.html#put-1-organizations-idorg-or-name-prefs-boardvisibilityrestrict-org)
-    * [PUT /1/organizations/[idOrg or name]/prefs/boardVisibilityRestrict/private](index.html#put-1-organizations-idorg-or-name-prefs-boardvisibilityrestrict-private)
-    * [PUT /1/organizations/[idOrg or name]/prefs/boardVisibilityRestrict/public](index.html#put-1-organizations-idorg-or-name-prefs-boardvisibilityrestrict-public)
-    * [PUT /1/organizations/[idOrg or name]/prefs/externalMembersDisabled](index.html#put-1-organizations-idorg-or-name-prefs-externalmembersdisabled)
-    * [PUT /1/organizations/[idOrg or name]/prefs/orgInviteRestrict](index.html#put-1-organizations-idorg-or-name-prefs-orginviterestrict)
-    * [PUT /1/organizations/[idOrg or name]/prefs/permissionLevel](index.html#put-1-organizations-idorg-or-name-prefs-permissionlevel)
-    * [PUT /1/organizations/[idOrg or name]/website](index.html#put-1-organizations-idorg-or-name-website)
-    * [POST /1/organizations](index.html#post-1-organizations)
-    * [POST /1/organizations/[idOrg or name]/logo](index.html#post-1-organizations-idorg-or-name-logo)
-    * [POST /1/organizations/[idOrg or name]/unpaidAccount](index.html#post-1-organizations-idorg-or-name-unpaidaccount)
-    * [DELETE /1/organizations/[idOrg or name]](index.html#delete-1-organizations-idorg-or-name)
-    * [DELETE /1/organizations/[idOrg or name]/logo](index.html#delete-1-organizations-idorg-or-name-logo)
-    * [DELETE /1/organizations/[idOrg or name]/members/[idMember]](index.html#delete-1-organizations-idorg-or-name-members-idmember)
-    * [DELETE /1/organizations/[idOrg or name]/members/[idMember]/all](index.html#delete-1-organizations-idorg-or-name-members-idmember-all)
-    * [DELETE /1/organizations/[idOrg or name]/prefs/associatedDomain](index.html#delete-1-organizations-idorg-or-name-prefs-associateddomain)
-    * [DELETE /1/organizations/[idOrg or name]/prefs/orgInviteRestrict](index.html#delete-1-organizations-idorg-or-name-prefs-orginviterestrict)
-
-### Browse
-
-  * Prev: [notification](../notification/index.html)
-  * Next: [search](../search/index.html)
-
-### You are here:
-
-  * [Trello documentation](../../index.html)
-    * [API Reference (Beta)](../index.html)
-      * organization
-
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

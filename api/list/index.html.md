@@ -1,14 +1,6 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-
-docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
+# list[¶](index.html.md#list)
 
-### Navigation
-
-  * [Trello documentation](../../index.html) »
-  * [API Reference (Beta)](../index.html) »
-
-# list[¶](index.html#list)
-
-## GET /1/lists/[idList][¶](index.html#get-1-lists-idlist)
+## GET /1/lists/[idList][¶](index.html.md#get-1-lists-idlist)
 
   * **Required permissions:** read
   * **Arguments**
@@ -57,6 +49,7 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
     
     https://api.trello.com/1/lists/4eea4ffc91e31d174600004a?fields=name&cards=open&card_fields=name&key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "id": "4eea4ffc91e31d174600004a",
         "name": "To Do Soon",
@@ -65,8 +58,9 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
             "name": "Finish my awesome application"
         }]
     }
+```
 
-## GET /1/lists/[idList]/[field][¶](index.html#get-1-lists-idlist-field)
+## GET /1/lists/[idList]/[field][¶](index.html.md#get-1-lists-idlist-field)
 
   * **Arguments**
     * `field` (required)
@@ -80,35 +74,45 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
     
     https://api.trello.com/1/lists/4eea4ffc91e31d174600004a/idBoard?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "4eea4ffc91e31d1746000046"
     }
+```
     
     https://api.trello.com/1/lists/4eea4ffc91e31d174600004a/pos?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": 16384
     }
+```
     
     https://api.trello.com/1/lists/4eea4ffc91e31d174600004a/closed?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": false
     }
+```
     
     https://api.trello.com/1/lists/4eea4ffc91e31d174600004a/name?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": "To Do Soon"
     }
+```
     
     https://api.trello.com/1/lists/4eea4ffc91e31d174600004a/subscribed?key=[application_key]&token=[optional_auth_token]
     
+```json
     {
         "_value": null
     }
+```
 
-## GET /1/lists/[idList]/actions[¶](index.html#get-1-lists-idlist-actions)
+## GET /1/lists/[idList]/actions[¶](index.html.md#get-1-lists-idlist-actions)
 
   * **Required permissions:** read
   * **Arguments**
@@ -240,6 +244,7 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
     
     https://api.trello.com/1/lists/4eea4ffc91e31d174600004a/actions?key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4efe314cc72846af4e00008a",
         "idMemberCreator": "4ee7deffe582acdec80000ac",
@@ -291,8 +296,9 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
             "username": "joetester"
         }
     }]
+```
 
-## GET /1/lists/[idList]/board[¶](index.html#get-1-lists-idlist-board)
+## GET /1/lists/[idList]/board[¶](index.html.md#get-1-lists-idlist-board)
 
   * **Required permissions:** read
   * **Arguments**
@@ -319,8 +325,7 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/lists/[idList]/board/[field][¶](index.html#get-1-lists-idlist-board-
-field)
+## GET /1/lists/[idList]/board/[field][¶](index.html.md#get-1-lists-idlist-board-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -346,7 +351,7 @@ field)
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/lists/[idList]/cards[¶](index.html#get-1-lists-idlist-cards)
+## GET /1/lists/[idList]/cards[¶](index.html.md#get-1-lists-idlist-cards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -495,6 +500,7 @@ field)
     
     https://api.trello.com/1/lists/4eea4ffc91e31d174600004a/cards?key=[application_key]&token=[optional_auth_token]
     
+```json
     [{
         "id": "4eea503791e31d1746000080",
         "checkItemStates": [],
@@ -531,9 +537,9 @@ field)
         "subscribed": false,
         "url": "https://trello.com/c/XlG8S7ll/3-finish-my-awesome-application"
     }]
+```
 
-## GET /1/lists/[idList]/cards/[filter][¶](index.html#get-1-lists-idlist-
-cards-filter)
+## GET /1/lists/[idList]/cards/[filter][¶](index.html.md#get-1-lists-idlist-cards-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -543,7 +549,7 @@ cards-filter)
         * `closed`
         * `all`
 
-## PUT /1/lists/[idList][¶](index.html#put-1-lists-idlist)
+## PUT /1/lists/[idList][¶](index.html.md#put-1-lists-idlist)
 
   * **Required permissions:** read
   * **Arguments**
@@ -562,7 +568,7 @@ cards-filter)
         * `true`
         * `false`
 
-## PUT /1/lists/[idList]/closed[¶](index.html#put-1-lists-idlist-closed)
+## PUT /1/lists/[idList]/closed[¶](index.html.md#put-1-lists-idlist-closed)
 
   * **Required permissions:** write
   * **Arguments**
@@ -571,7 +577,7 @@ cards-filter)
         * `true`
         * `false`
 
-## PUT /1/lists/[idList]/idBoard[¶](index.html#put-1-lists-idlist-idboard)
+## PUT /1/lists/[idList]/idBoard[¶](index.html.md#put-1-lists-idlist-idboard)
 
   * **Required permissions:** write
   * **Arguments**
@@ -581,22 +587,21 @@ cards-filter)
       * **Default:** `top`
       * **Valid Values:** position of the list on the new board
 
-## PUT /1/lists/[idList]/name[¶](index.html#put-1-lists-idlist-name)
+## PUT /1/lists/[idList]/name[¶](index.html.md#put-1-lists-idlist-name)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## PUT /1/lists/[idList]/pos[¶](index.html#put-1-lists-idlist-pos)
+## PUT /1/lists/[idList]/pos[¶](index.html.md#put-1-lists-idlist-pos)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## PUT /1/lists/[idList]/subscribed[¶](index.html#put-1-lists-idlist-
-subscribed)
+## PUT /1/lists/[idList]/subscribed[¶](index.html.md#put-1-lists-idlist-subscribed)
 
   * **Required permissions:** read
   * **Arguments**
@@ -605,7 +610,7 @@ subscribed)
         * `true`
         * `false`
 
-## POST /1/lists[¶](index.html#post-1-lists)
+## POST /1/lists[¶](index.html.md#post-1-lists)
 
   * **Required permissions:** write
   * **Arguments**
@@ -619,13 +624,12 @@ subscribed)
       * **Default:** `top`
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## POST /1/lists/[idList]/archiveAllCards[¶](index.html#post-1-lists-idlist-
-archiveallcards)
+## POST /1/lists/[idList]/archiveAllCards[¶](index.html.md#post-1-lists-idlist-archiveallcards)
 
   * **Required permissions:** write
   * **Arguments:** None
 
-## POST /1/lists/[idList]/cards[¶](index.html#post-1-lists-idlist-cards)
+## POST /1/lists/[idList]/cards[¶](index.html.md#post-1-lists-idlist-cards)
 
   * **Required permissions:** write
   * **Arguments**
@@ -639,39 +643,5 @@ archiveallcards)
     * `due` (required)
       * **Valid Values:** A date, or `null`
 
-### Search
-
-### [Documentation Home](../../index.html)
-
-  * [list](index.html#)
-    * [GET /1/lists/[idList]](index.html#get-1-lists-idlist)
-    * [GET /1/lists/[idList]/[field]](index.html#get-1-lists-idlist-field)
-    * [GET /1/lists/[idList]/actions](index.html#get-1-lists-idlist-actions)
-    * [GET /1/lists/[idList]/board](index.html#get-1-lists-idlist-board)
-    * [GET /1/lists/[idList]/board/[field]](index.html#get-1-lists-idlist-board-field)
-    * [GET /1/lists/[idList]/cards](index.html#get-1-lists-idlist-cards)
-    * [GET /1/lists/[idList]/cards/[filter]](index.html#get-1-lists-idlist-cards-filter)
-    * [PUT /1/lists/[idList]](index.html#put-1-lists-idlist)
-    * [PUT /1/lists/[idList]/closed](index.html#put-1-lists-idlist-closed)
-    * [PUT /1/lists/[idList]/idBoard](index.html#put-1-lists-idlist-idboard)
-    * [PUT /1/lists/[idList]/name](index.html#put-1-lists-idlist-name)
-    * [PUT /1/lists/[idList]/pos](index.html#put-1-lists-idlist-pos)
-    * [PUT /1/lists/[idList]/subscribed](index.html#put-1-lists-idlist-subscribed)
-    * [POST /1/lists](index.html#post-1-lists)
-    * [POST /1/lists/[idList]/archiveAllCards](index.html#post-1-lists-idlist-archiveallcards)
-    * [POST /1/lists/[idList]/cards](index.html#post-1-lists-idlist-cards)
-
-### Browse
-
-  * Prev: [checklist](../checklist/index.html)
-  * Next: [member](../member/index.html)
-
-### You are here:
-
-  * [Trello documentation](../../index.html)
-    * [API Reference (Beta)](../index.html)
-      * list
-
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

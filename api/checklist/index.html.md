@@ -1,14 +1,6 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-
-docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
+# checklist[¶](index.html.md#checklist)
 
-### Navigation
-
-  * [Trello documentation](../../index.html) »
-  * [API Reference (Beta)](../index.html) »
-
-# checklist[¶](index.html#checklist)
-
-## GET /1/checklists/[idChecklist][¶](index.html#get-1-checklists-idchecklist)
+## GET /1/checklists/[idChecklist][¶](index.html.md#get-1-checklists-idchecklist)
 
   * **Required permissions:** read
   * **Arguments**
@@ -68,7 +60,8 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
   * **Examples**
     
     https://api.trello.com/1/checklists/4eea6ae1a5da7f5a49000092?fields=name&cards=all&card_fields=name&key=[application_key]&token=[optional_auth_token]
-    
+
+```json
     {
         "id": "4eea6ae1a5da7f5a49000092",
         "name": "API Checklist",
@@ -96,9 +89,9 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
             "name": "Figure out how to read a user's board list"
         }]
     }
+```
 
-## GET /1/checklists/[idChecklist]/[field][¶](index.html#get-1-checklists-
-idchecklist-field)
+## GET /1/checklists/[idChecklist]/[field][¶](index.html.md#get-1-checklists-idchecklist-field)
 
   * **Arguments**
     * `field` (required)
@@ -108,8 +101,7 @@ idchecklist-field)
         * `idCard`
         * `pos`
 
-## GET /1/checklists/[idChecklist]/board[¶](index.html#get-1-checklists-
-idchecklist-board)
+## GET /1/checklists/[idChecklist]/board[¶](index.html.md#get-1-checklists-idchecklist-board)
 
   * **Required permissions:** read
   * **Arguments**
@@ -136,8 +128,7 @@ idchecklist-board)
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/checklists/[idChecklist]/board/[field][¶](index.html#get-1
--checklists-idchecklist-board-field)
+## GET /1/checklists/[idChecklist]/board/[field][¶](index.html.md#get-1-checklists-idchecklist-board-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -163,8 +154,7 @@ idchecklist-board)
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/checklists/[idChecklist]/cards[¶](index.html#get-1-checklists-
-idchecklist-cards)
+## GET /1/checklists/[idChecklist]/cards[¶](index.html.md#get-1-checklists-idchecklist-cards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -310,8 +300,7 @@ idchecklist-cards)
         * `subscribed`
         * `url`
 
-## GET /1/checklists/[idChecklist]/cards/[filter][¶](index.html#get-1
--checklists-idchecklist-cards-filter)
+## GET /1/checklists/[idChecklist]/cards/[filter][¶](index.html.md#get-1-checklists-idchecklist-cards-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -321,8 +310,7 @@ idchecklist-cards)
         * `closed`
         * `all`
 
-## GET /1/checklists/[idChecklist]/checkItems[¶](index.html#get-1-checklists-
-idchecklist-checkitems)
+## GET /1/checklists/[idChecklist]/checkItems[¶](index.html.md#get-1-checklists-idchecklist-checkitems)
 
   * **Required permissions:** read
   * **Arguments**
@@ -342,7 +330,8 @@ idchecklist-checkitems)
   * **Examples**
     
     https://api.trello.com/1/checklists/4eea6ae1a5da7f5a49000092/checkItems?key=[application_key]&token=[optional_auth_token]
-    
+
+```json    
     [{
         "state": "complete",
         "id": "4eea6aeda5da7f5a490000b9",
@@ -362,10 +351,9 @@ idchecklist-checkitems)
         "nameData": null,
         "pos": 50647
     }]
+```
 
-## GET
-/1/checklists/[idChecklist]/checkItems/[idCheckItem][¶](index.html#get-1
--checklists-idchecklist-checkitems-idcheckitem)
+## GET /1/checklists/[idChecklist]/checkItems/[idCheckItem][¶](index.html.md#get-1-checklists-idchecklist-checkitems-idcheckitem)
 
   * **Required permissions:** read
   * **Arguments**
@@ -380,7 +368,7 @@ idchecklist-checkitems)
     * `idCheckItem` (required)
       * **Valid Values:** id of the checkitem to retrieve
 
-## PUT /1/checklists/[idChecklist][¶](index.html#put-1-checklists-idchecklist)
+## PUT /1/checklists/[idChecklist][¶](index.html.md#put-1-checklists-idchecklist)
 
   * **Required permissions:** read
   * **Arguments**
@@ -391,31 +379,28 @@ idchecklist-checkitems)
     * `pos` (optional)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## PUT /1/checklists/[idChecklist]/idCard[¶](index.html#put-1-checklists-
-idchecklist-idcard)
+## PUT /1/checklists/[idChecklist]/idCard[¶](index.html.md#put-1-checklists-idchecklist-idcard)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** The id of the card that the checklist is on
 
-## PUT /1/checklists/[idChecklist]/name[¶](index.html#put-1-checklists-
-idchecklist-name)
+## PUT /1/checklists/[idChecklist]/name[¶](index.html.md#put-1-checklists-idchecklist-name)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## PUT /1/checklists/[idChecklist]/pos[¶](index.html#put-1-checklists-
-idchecklist-pos)
+## PUT /1/checklists/[idChecklist]/pos[¶](index.html.md#put-1-checklists-idchecklist-pos)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## POST /1/checklists[¶](index.html#post-1-checklists)
+## POST /1/checklists[¶](index.html.md#post-1-checklists)
 
   * **Required permissions:** write
   * **Arguments**
@@ -431,8 +416,7 @@ idchecklist-pos)
     * `idChecklistSource` (optional)
       * **Valid Values:** The id of the source checklist to copy into a new checklist.
 
-## POST /1/checklists/[idChecklist]/checkItems[¶](index.html#post-1
--checklists-idchecklist-checkitems)
+## POST /1/checklists/[idChecklist]/checkItems[¶](index.html.md#post-1-checklists-idchecklist-checkitems)
 
   * **Required permissions:** write
   * **Arguments**
@@ -447,54 +431,17 @@ idchecklist-pos)
         * `true`
         * `false`
 
-## DELETE /1/checklists/[idChecklist][¶](index.html#delete-1-checklists-
-idchecklist)
+## DELETE /1/checklists/[idChecklist][¶](index.html.md#delete-1-checklists-idchecklist)
 
   * **Required permissions:** write
   * **Arguments:** None
 
-## DELETE
-/1/checklists/[idChecklist]/checkItems/[idCheckItem][¶](index.html#delete-1
--checklists-idchecklist-checkitems-idcheckitem)
+## DELETE /1/checklists/[idChecklist]/checkItems/[idCheckItem][¶](index.html.md#delete-1-checklists-idchecklist-checkitems-idcheckitem)
 
   * **Required permissions:** write
   * **Arguments**
     * `idCheckItem` (required)
       * **Valid Values:** the id of the check item to remove
 
-### Search
-
-### [Documentation Home](../../index.html)
-
-  * [checklist](index.html#)
-    * [GET /1/checklists/[idChecklist]](index.html#get-1-checklists-idchecklist)
-    * [GET /1/checklists/[idChecklist]/[field]](index.html#get-1-checklists-idchecklist-field)
-    * [GET /1/checklists/[idChecklist]/board](index.html#get-1-checklists-idchecklist-board)
-    * [GET /1/checklists/[idChecklist]/board/[field]](index.html#get-1-checklists-idchecklist-board-field)
-    * [GET /1/checklists/[idChecklist]/cards](index.html#get-1-checklists-idchecklist-cards)
-    * [GET /1/checklists/[idChecklist]/cards/[filter]](index.html#get-1-checklists-idchecklist-cards-filter)
-    * [GET /1/checklists/[idChecklist]/checkItems](index.html#get-1-checklists-idchecklist-checkitems)
-    * [GET /1/checklists/[idChecklist]/checkItems/[idCheckItem]](index.html#get-1-checklists-idchecklist-checkitems-idcheckitem)
-    * [PUT /1/checklists/[idChecklist]](index.html#put-1-checklists-idchecklist)
-    * [PUT /1/checklists/[idChecklist]/idCard](index.html#put-1-checklists-idchecklist-idcard)
-    * [PUT /1/checklists/[idChecklist]/name](index.html#put-1-checklists-idchecklist-name)
-    * [PUT /1/checklists/[idChecklist]/pos](index.html#put-1-checklists-idchecklist-pos)
-    * [POST /1/checklists](index.html#post-1-checklists)
-    * [POST /1/checklists/[idChecklist]/checkItems](index.html#post-1-checklists-idchecklist-checkitems)
-    * [DELETE /1/checklists/[idChecklist]](index.html#delete-1-checklists-idchecklist)
-    * [DELETE /1/checklists/[idChecklist]/checkItems/[idCheckItem]](index.html#delete-1-checklists-idchecklist-checkitems-idcheckitem)
-
-### Browse
-
-  * Prev: [card](../card/index.html)
-  * Next: [list](../list/index.html)
-
-### You are here:
-
-  * [Trello documentation](../../index.html)
-    * [API Reference (Beta)](../index.html)
-      * checklist
-
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

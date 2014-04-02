@@ -1,13 +1,6 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-docs.png)](../index.html)
-[Go to trello.com →](../../index.html)
+# Getting Started[¶](index.html.md#getting-started)
 
-### Navigation
-
-  * [Trello documentation](../index.html) »
-
-# Getting Started[¶](index.html#getting-started)
-
-## Introduction[¶](index.html#introduction)
+## Introduction[¶](index.html.md#introduction)
 
 Trello provides a simple
 [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) web
@@ -15,7 +8,7 @@ API where each type of resource (e.g. a card, a board, or a member) has a URI
 that you can interact with.
 
 For example, if you'd like to use the API to get information about the [Trello
-Development board](../../board/trello-development/4d5ea62fd76aa1136000000c),
+Development board](http://trello.com/board/trello-development/4d5ea62fd76aa1136000000c),
 you'd use the following URI:
 
     
@@ -26,7 +19,7 @@ you'd use the following URI:
   * All API requests go to `https://api.trello.com`
   * The `/1` part of the URI is the API version
   * The `/boards` part means that we're addressing Trello's collection of boards
-  * The `/4d5ea62fd76aa1136000000c` part is the id of the board that we want to interact with. You'll notice that the board id is also part of the [board's URL in Trello](../../board/trello-development/4d5ea62fd76aa1136000000c)
+  * The `/4d5ea62fd76aa1136000000c` part is the id of the board that we want to interact with. You'll notice that the board id is also part of the [board's URL in Trello](http://trello.com/board/trello-development/4d5ea62fd76aa1136000000c)
 
 The simplest thing you can do with a Trello resource URI is `GET` it. (When
 using REST API via HTTP, you "read" something by using the HTTP `GET` method).
@@ -36,10 +29,10 @@ However, if you `GET` the aforementioned URI
 pasting it in the address bar of a web browser, you won't get the board data;
 instead you'll get an `invalid key` error (with a `401 Unauthorized` HTTP
 status code). That's because all requests to the Trello API must include an
-[application key](index.html#application-key), which Trello uses to identify
+[application key](index.html.md#application-key), which Trello uses to identify
 the application making the request.
 
-## Getting an Application Key[¶](index.html#getting-an-application-key)
+## Getting an Application Key[¶](index.html.md#getting-an-application-key)
 
 You can get your application key by logging into Trello, and then visiting
 [https://trello.com/1/appKey/generate](https://trello.com/1/appKey/generate)
@@ -56,13 +49,16 @@ you'll no longer get an error. Instead, you'll get a response that looks like
 this:
 
     
+```json
     {"id":"4d5ea62fd76aa1136000000c","name":"Trello Development","desc":"Trello board used by the Trello team to track work on Trello.  How meta!\n\nThe development of the Trello API is being tracked at https://trello.com/api\n\nThe development of Trello Mobile applications is being tracked at https://trello.com/mobile","closed":false,"idOrganization":"4e1452614e4b8698470000e0","url":"https://trello.com/board/trello-development/4d5ea62fd76aa1136000000c","prefs":{"voting":"public","permissionLevel":"public","invitations":"members","comments":"public"}}
+```
 
 All the responses to Trello API calls use JSON. You can make the response look
 prettier by running it through a javascript beautifier, which will give you
 something like this:
 
     
+```json
     {
         "id": "4d5ea62fd76aa1136000000c",
         "name": "Trello Development",
@@ -77,9 +73,10 @@ something like this:
             "comments": "public"
         }
     }
+```
 
 If you wanted to include additional information in the response, you could add
-additional parameters (documented [here](../api/board/index.html#get-1-boards-
+additional parameters (documented [here](http://trello.com/api/board/index.html#get-1-boards-
 board-id)). For example, if you wanted to also get all the open lists and
 cards on the Trello Development board, you could `GET` this URL:
 
@@ -97,19 +94,19 @@ However, unless your board is public (like the Trello Development board), when
 you try to `GET` that URL, you'll get a `401 unauthorized` error. You can only
 read a private board (or card, or organization) if the API knows that you have
 permission to read that resource. You can tell the API that you've been
-authorized to read private data by including a [token](index.html#token),
+authorized to read private data by including a [token](index.html.md#token),
 which is given to your by a user and which allows you to read (and potentially
 write) things on their behalf.
 
 **Notes:**
 
-  * The application key is used only to let Trello know which application is making the request; it doesn't tell Trello who the request is being made on behalf of. For example, if you're using your own application key, you still need to generate a [token](index.html#token) to be able to access any of your private boards.
+  * The application key is used only to let Trello know which application is making the request; it doesn't tell Trello who the request is being made on behalf of. For example, if you're using your own application key, you still need to generate a [token](index.html.md#token) to be able to access any of your private boards.
 
-## Getting a Token from a User[¶](index.html#getting-a-token-from-a-user)
+## Getting a Token from a User[¶](index.html.md#getting-a-token-from-a-user)
 
 Full documentation for authorizing a client can be found at [_Authorizing a
-Client_](authorize.html), and for authorizing via OAuth can be found at
-[_Authorizing via OAuth_](oauth.html).
+Client_](authorize.html.md), and for authorizing via OAuth can be found at
+[_Authorizing via OAuth_](oauth.html.md).
 
 You can request a token from a user by directing them to an authorization URL,
 like the following:
@@ -180,12 +177,13 @@ You'll also need your application secret (used to sign your requests). That's
 listed in the second box on
 [https://trello.com/1/appKey/generate](https://trello.com/1/appKey/generate).
 
-## Using client.js[¶](index.html#using-client-js)
+## Using client.js[¶](index.html.md#using-client-js)
 
 If you're developing an application that has a web interface, you can use the
 Trello API client library, like so:
 
     
+```html
     <head>
       <!-- ...  -->
     
@@ -195,11 +193,12 @@ Trello API client library, like so:
     
       <!-- ...  -->
     </head>
+```
 
 The un-minified, documented source of client.js is at
 [https://trello.com/1/client.coffee](https://trello.com/1/client.coffee)
 
-Documentation for using client.js is at [_client.js_](clientjs.html)
+Documentation for using client.js is at [_client.js_](clientjs.html.md)
 
 The client library can take care of getting the authorization token from the
 user, and provides a wrapper around the `GET`, `PUT`, `POST` and `DELETE` HTTP
@@ -211,35 +210,13 @@ Examples using the client library:
   * [jsfiddle that adds a comment to a selected card](http://jsfiddle.net/E4rLn/)
   * [Trello Calendar](http://trellocalendar-francois2metz.dotcloud.com)
 
-## Watching Models with Webhooks[¶](index.html#watching-models-with-webhooks)
+## Watching Models with Webhooks[¶](index.html.md#watching-models-with-webhooks)
 
 Webhooks provide a way for third party applications to keep Trello data in
 sync with their own servers. Webhooks can be registered to watch models, and
 when a change happens on one of those models, the third party is informed.
 
-Full documentation on Webhooks can be found at [_Webhooks_](webhooks.html).
-
-### Search
-
-### [Documentation Home](../index.html)
-
-  * [Getting Started](index.html#)
-    * [Introduction](index.html#introduction)
-    * [Getting an Application Key](index.html#getting-an-application-key)
-    * [Getting a Token from a User](index.html#getting-a-token-from-a-user)
-    * [Using client.js](index.html#using-client-js)
-    * [Watching Models with Webhooks](index.html#watching-models-with-webhooks)
-
-### Browse
-
-  * Prev: [Trello API Documentation](../index.html)
-  * Next: [API Reference (Beta)](../api/index.html)
-
-### You are here:
-
-  * [Trello documentation](../index.html)
-    * Getting Started
+Full documentation on Webhooks can be found at [_Webhooks_](webhooks.html.md).
 
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

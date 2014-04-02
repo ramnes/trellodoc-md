@@ -1,24 +1,17 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-docs.png)](../index.html)
-[Go to trello.com →](../../index.html)
-
-### Navigation
-
-  * [Trello documentation](../index.html) »
-
-# Webhooks[¶](webhooks.html#webhooks)
+# Webhooks[¶](webhooks.html.md#webhooks)
 
 Webhooks provide a way for application developers to receive notifications
 when a model changes. Although webhooks are only accessible through the API
 currently, we hope that developers working on third party apps for Trello find
 them as useful as we do.
 
-## Creating a Webhook[¶](webhooks.html#creating-a-webhook)
+## Creating a Webhook[¶](webhooks.html.md#creating-a-webhook)
 
 We designed webhooks with security in mind. Webhooks belong to tokens and can
 only monitor objects that the token can access. The first step, then, to
 creating a webhook is obtaining a token either by our [web client
-authorization process](authorize.html) or by [authorizing via
-OAuth](oauth.html).
+authorization process](authorize.html.md) or by [authorizing via
+OAuth](oauth.html.md).
 
 The second requirement for a webhook is a `callbackURL` parameter. When a
 model with a webhook changes, the update is fired via an HTTP POST request
@@ -41,16 +34,18 @@ this model will trigger the webhook.
 Example setup from a web client:
 
     
+```js
     $.post("https://trello.com/1/tokens/[USER_TOKEN]/webhooks/?key=[APPLICATION_KEY]", {
       description: "My first webhook",
       callbackURL: "http://www.mywebsite.com/trelloCallback",
       idModel: "4d5ea62fd76aa1136000000c",
     });
+```
 
 Your `APPLICATION_KEY` can be found
 [here](https://trello.com/1/appkey/generate)
 
-## Triggering Webhooks[¶](webhooks.html#triggering-webhooks)
+## Triggering Webhooks[¶](webhooks.html.md#triggering-webhooks)
 
 Now that the webhook is set up, whenever a change on the model occurs, we will
 send an HTTP POST request to the provided endpoint.
@@ -58,6 +53,7 @@ send an HTTP POST request to the provided endpoint.
 Example Webhook Response
 
     
+```json
     {
        "action": {
           "id":"51f9424bcd6e040f3c002412",
@@ -114,6 +110,7 @@ Example Webhook Response
           }
        }
     }
+```
 
 Trello also signs webhook requests so you can optionally verify that they
 originated from Trello. Each webhook trigger contains the HTTP header `X
@@ -126,6 +123,7 @@ secret](https://trello.com/1/appkey/generate).
 Here is some sample code for checking the validity of a request using Node.js:
 
     
+```js
     var crypto = require('crypto');
     
     function verifyTrelloWebhookRequest(request, secret, callbackURL) {
@@ -133,11 +131,12 @@ Here is some sample code for checking the validity of a request using Node.js:
     
       return hash.digest('base64') == request.headers['x-trello-webhook'];
     }
+```
 
 If for some reason the connection is disrupted, or unavailable, the webhook
 will retry 3 times before stopping.
 
-## Deleting Webhooks[¶](webhooks.html#deleting-webhooks)
+## Deleting Webhooks[¶](webhooks.html.md#deleting-webhooks)
 
 There are three ways to delete webhooks.
 
@@ -148,28 +147,10 @@ There are three ways to delete webhooks.
   2. If the webhook request from Trello, when POSTing to the `callbackURL`, receives an HTTP `410 Gone` response, the webhook will be deleted.
   3. If the token that the webhook is bound to is revoked or expires, then the webhook will be deleted.
 
-## API Documentation[¶](webhooks.html#api-documentation)
+## API Documentation[¶](webhooks.html.md#api-documentation)
 
 For further information on webhooks, please see the [Webhook
-documentation](../api/webhook/index.html).
-
-### Search
-
-### [Documentation Home](../index.html)
-
-  * [Webhooks](webhooks.html#)
-    * [Creating a Webhook](webhooks.html#creating-a-webhook)
-    * [Triggering Webhooks](webhooks.html#triggering-webhooks)
-    * [Deleting Webhooks](webhooks.html#deleting-webhooks)
-    * [API Documentation](webhooks.html#api-documentation)
-
-### Browse
-
-### You are here:
-
-  * [Trello documentation](../index.html)
-    * Webhooks
+documentation](../api/webhook/index.html.md).
 
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

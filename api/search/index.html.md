@@ -1,14 +1,6 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-
-docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
+# search[¶](index.html.md#search)
 
-### Navigation
-
-  * [Trello documentation](../../index.html) »
-  * [API Reference (Beta)](../index.html) »
-
-# search[¶](index.html#search)
-
-## GET /1/search[¶](index.html#get-1-search)
+## GET /1/search[¶](index.html.md#get-1-search)
 
   * **Arguments**
     * `query` (required)
@@ -164,7 +156,7 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
         * `true`
         * `false`
 
-## GET /1/search/members[¶](index.html#get-1-search-members)
+## GET /1/search/members[¶](index.html.md#get-1-search-members)
 
   * **Arguments**
     * `query` (required)
@@ -180,25 +172,5 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
       * **Default:** `false`
       * **Valid Values:** A boolean
 
-### Search
-
-### [Documentation Home](../../index.html)
-
-  * [search](index.html#)
-    * [GET /1/search](index.html#get-1-search)
-    * [GET /1/search/members](index.html#get-1-search-members)
-
-### Browse
-
-  * Prev: [organization](../organization/index.html)
-  * Next: [token](../token/index.html)
-
-### You are here:
-
-  * [Trello documentation](../../index.html)
-    * [API Reference (Beta)](../index.html)
-      * search
-
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

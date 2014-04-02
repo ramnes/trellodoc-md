@@ -1,14 +1,6 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-
-docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
+# type[¶](index.html.md#type)
 
-### Navigation
-
-  * [Trello documentation](../../index.html) »
-  * [API Reference (Beta)](../index.html) »
-
-# type[¶](index.html#type)
-
-## GET /1/types/[id][¶](index.html#get-1-types-id)
+## GET /1/types/[id][¶](index.html.md#get-1-types-id)
 
   * **Required permissions:** read
   * **Arguments:** None
@@ -16,26 +8,8 @@ docs.png)](../../index.html) [Go to trello.com →](../../../index.html)
     
     https://api.trello.com/1/types/org1?key=[application_key]&token=[optional_auth_token]
     
+```json
     model not found
-
-### Search
-
-### [Documentation Home](../../index.html)
-
-  * [type](index.html#)
-    * [GET /1/types/[id]](index.html#get-1-types-id)
-
-### Browse
-
-  * Prev: [token](../token/index.html)
-  * Next: [webhook](../webhook/index.html)
-
-### You are here:
-
-  * [Trello documentation](../../index.html)
-    * [API Reference (Beta)](../index.html)
-      * type
-
+```
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-

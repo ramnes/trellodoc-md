@@ -68,4 +68,3 @@ Work on the Trello API is being tracked at [https://trello.com/api](https://trel
 
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
-
