@@ -24,9 +24,7 @@
 
 ## Generating Your Developer Key[¶](README.md#generating-your-developer-key)
 
-Generate a developer key by logging into Trello and visiting
-
-[https://trello.com/1/appKey/generate](https://trello.com/1/appKey/generate)
+Generate a developer key by logging into Trello and visiting [https://trello.com/1/appKey/generate](https://trello.com/1/appKey/generate)
 
 ## Follow the Development of the API[¶](README.md#follow-the-development-of-the-api)
 
@@ -58,19 +56,11 @@ Work on the Trello API is being tracked at [https://trello.com/api](https://trel
 
 ## This is not the help I was looking for[¶](README.md#this-is-not-the-help-i-was-looking-for)
 
-For help using the Trello website, visit [https://trello.com/guide](https://trello.com/guide).
-
-For bug reports, email [support@trello.com](mailto:support%40trello.com).
-
-For feature requests, email [feature-ideas@trello.com](mailto:feature-
-ideas%40trello.com).
-
-I still didn't find my answer! Try [Web Apps Stack
-Exchange](http://webapps.stackexchange.com).
-
-For updates on developing features, new feature announcements, and everything
-else:
-
+* For help using the Trello website, visit [https://trello.com/guide](https://trello.com/guide).
+* For bug reports, email [support@trello.com](mailto:support%40trello.com).
+* For feature requests, email [feature-ideas@trello.com](mailto:feature-ideas%40trello.com).
+* I still didn't find my answer! Try [Web Apps Stack Exchange](http://webapps.stackexchange.com).
+* For updates on developing features, new feature announcements, and everything else:
   * [Trello Development board](http://trello.com/board/trello-development/4d5ea62fd76aa1136000000c)
   * [Trello Blog](http://blog.trello.com)
   * [@trello on Twitter](https://twitter.com/trello)
