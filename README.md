@@ -1,49 +1,44 @@
-[![](https://d2isj6rbqore70.cloudfront.net/trellogo-docs.png)](index.html#)
-[Go to trello.com →](../index.html)
+[![](https://d2isj6rbqore70.cloudfront.net/trellogo-docs.png)](README.md#)
 
-### Navigation
+# Trello API Documentation[¶](README.md#trello-api-documentation)
 
-  * [Trello documentation](index.html#) »
+  * [Getting Started](gettingstarted/index.html.md)
+    * [Introduction](gettingstarted/index.html.md#introduction)
+    * [Getting an Application Key](gettingstarted/index.html.md#getting-an-application-key)
+    * [Getting a Token from a User](gettingstarted/index.html.md#getting-a-token-from-a-user)
+    * [Using client.js](gettingstarted/index.html.md#using-client-js)
+    * [Watching Models with Webhooks](gettingstarted/index.html.md#watching-models-with-webhooks)
+  * [API Reference (Beta)](api/index.html.md)
+    * [action](api/action/index.html.md)
+    * [board](api/board/index.html.md)
+    * [card](api/card/index.html.md)
+    * [checklist](api/checklist/index.html.md)
+    * [list](api/list/index.html.md)
+    * [member](api/member/index.html.md)
+    * [notification](api/notification/index.html.md)
+    * [organization](api/organization/index.html.md)
+    * [search](api/search/index.html.md)
+    * [token](api/token/index.html.md)
+    * [type](api/type/index.html.md)
+    * [webhook](api/webhook/index.html.md)
 
-# Trello API Documentation[¶](index.html#trello-api-documentation)
-
-  * [Getting Started](gettingstarted/index.html)
-    * [Introduction](gettingstarted/index.html#introduction)
-    * [Getting an Application Key](gettingstarted/index.html#getting-an-application-key)
-    * [Getting a Token from a User](gettingstarted/index.html#getting-a-token-from-a-user)
-    * [Using client.js](gettingstarted/index.html#using-client-js)
-    * [Watching Models with Webhooks](gettingstarted/index.html#watching-models-with-webhooks)
-  * [API Reference (Beta)](api/index.html)
-    * [action](api/action/index.html)
-    * [board](api/board/index.html)
-    * [card](api/card/index.html)
-    * [checklist](api/checklist/index.html)
-    * [list](api/list/index.html)
-    * [member](api/member/index.html)
-    * [notification](api/notification/index.html)
-    * [organization](api/organization/index.html)
-    * [search](api/search/index.html)
-    * [token](api/token/index.html)
-    * [type](api/type/index.html)
-    * [webhook](api/webhook/index.html)
-
-## Generating Your Developer Key[¶](index.html#generating-your-developer-key)
+## Generating Your Developer Key[¶](README.md#generating-your-developer-key)
 
 Generate a developer key by logging into Trello and visiting
 
 [https://trello.com/1/appKey/generate](https://trello.com/1/appKey/generate)
 
-## Follow the Development of the API[¶](index.html#follow-the-development-of-
+## Follow the Development of the API[¶](README.md#follow-the-development-of-
 the-api)
 
 Work on the Trello API is being tracked at [https://trello.com/api](../api)
 
-## Examples[¶](index.html#examples)
+## Examples[¶](README.md#examples)
 
   * Reading all the cards a member is assigned to: [http://jsfiddle.net/nNesx/](http://jsfiddle.net/nNesx/)
   * Add a comment to a card that you are assigned to: [http://jsfiddle.net/E4rLn/](http://jsfiddle.net/E4rLn/)
 
-## Tools and Projects using the API[¶](index.html#tools-and-projects-using-
+## Tools and Projects using the API[¶](README.md#tools-and-projects-using-
 the-api)
 
   * Wrappers
@@ -63,7 +58,7 @@ the-api)
     * [http://www.twilio.com/gallery/projects/Twellio](http://www.twilio.com/gallery/projects/Twellio) (Send cards to Trello via SMS)
     * [https://bitbucket.org/JakeGinnivan/taskboards](https://bitbucket.org/JakeGinnivan/taskboards) (A WP7 Trello App)
 
-## This is not the help I was looking for.[¶](index.html#this-is-not-the-
+## This is not the help I was looking for.[¶](README.md#this-is-not-the-
 help-i-was-looking-for)
 
 For help using the Trello website, visit [https://trello.com/guide](../guide).
@@ -84,25 +79,14 @@ else:
   * [@trello on Twitter](https://twitter.com/trello)
   * [Trello on Facebook](https://facebook.com/trelloapp)
 
-### Search
+### [Documentation Home](README.md#)
 
-### [Documentation Home](index.html#)
-
-  * [Trello API Documentation](index.html#)
-    * [Generating Your Developer Key](index.html#generating-your-developer-key)
-    * [Follow the Development of the API](index.html#follow-the-development-of-the-api)
-    * [Examples](index.html#examples)
-    * [Tools and Projects using the API](index.html#tools-and-projects-using-the-api)
-    * [This is not the help I was looking for.](index.html#this-is-not-the-help-i-was-looking-for)
-
-### Browse
-
-  * Next: [Getting Started](gettingstarted/index.html)
-
-### You are here:
-
-  * [Trello documentation](index.html#)
-    * Trello API Documentation
+  * [Trello API Documentation](README.md#)
+    * [Generating Your Developer Key](README.md#generating-your-developer-key)
+    * [Follow the Development of the API](README.md#follow-the-development-of-the-api)
+    * [Examples](README.md#examples)
+    * [Tools and Projects using the API](README.md#tools-and-projects-using-the-api)
+    * [This is not the help I was looking for.](README.md#this-is-not-the-help-i-was-looking-for)
 
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
