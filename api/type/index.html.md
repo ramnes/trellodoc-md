@@ -8,7 +8,7 @@
     
     https://api.trello.com/1/types/org1?key=[application_key]&token=[optional_auth_token]
     
-```json
+```
     model not found
 ```
 (C) Copyright 2013, Fog Creek Software. Created using
