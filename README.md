@@ -31,15 +31,14 @@ Generate a developer key by logging into Trello and visiting
 ## Follow the Development of the API[¶](README.md#follow-the-development-of-
 the-api)
 
-Work on the Trello API is being tracked at [https://trello.com/api](../api)
+Work on the Trello API is being tracked at [https://trello.com/api](https://trello.com/api])
 
 ## Examples[¶](README.md#examples)
 
   * Reading all the cards a member is assigned to: [http://jsfiddle.net/nNesx/](http://jsfiddle.net/nNesx/)
   * Add a comment to a card that you are assigned to: [http://jsfiddle.net/E4rLn/](http://jsfiddle.net/E4rLn/)
 
-## Tools and Projects using the API[¶](README.md#tools-and-projects-using-
-the-api)
+## Tools and Projects using the API[¶](README.md#tools-and-projects-using-the-api)
 
   * Wrappers
     * [https://github.com/jeremytregunna/ruby-trello](https://github.com/jeremytregunna/ruby-trello) (Ruby)
@@ -58,10 +57,9 @@ the-api)
     * [http://www.twilio.com/gallery/projects/Twellio](http://www.twilio.com/gallery/projects/Twellio) (Send cards to Trello via SMS)
     * [https://bitbucket.org/JakeGinnivan/taskboards](https://bitbucket.org/JakeGinnivan/taskboards) (A WP7 Trello App)
 
-## This is not the help I was looking for.[¶](README.md#this-is-not-the-
-help-i-was-looking-for)
+## This is not the help I was looking for.[¶](README.md#this-is-not-the-help-i-was-looking-for)
 
-For help using the Trello website, visit [https://trello.com/guide](../guide).
+For help using the Trello website, visit [https://trello.com/guide](https://trello.com/guide).
 
 For bug reports, email [support@trello.com](mailto:support%40trello.com).
 
@@ -74,19 +72,10 @@ Exchange](http://webapps.stackexchange.com).
 For updates on developing features, new feature announcements, and everything
 else:
 
-  * [Trello Development board](../board/trello-development/4d5ea62fd76aa1136000000c)
+  * [Trello Development board](http://trello.com/board/trello-development/4d5ea62fd76aa1136000000c)
   * [Trello Blog](http://blog.trello.com)
   * [@trello on Twitter](https://twitter.com/trello)
   * [Trello on Facebook](https://facebook.com/trelloapp)
-
-### [Documentation Home](README.md#)
-
-  * [Trello API Documentation](README.md#)
-    * [Generating Your Developer Key](README.md#generating-your-developer-key)
-    * [Follow the Development of the API](README.md#follow-the-development-of-the-api)
-    * [Examples](README.md#examples)
-    * [Tools and Projects using the API](README.md#tools-and-projects-using-the-api)
-    * [This is not the help I was looking for.](README.md#this-is-not-the-help-i-was-looking-for)
 
 (C) Copyright 2013, Fog Creek Software. Created using
 [Sphinx](http://sphinx.pocoo.org/) 1.2b1.
