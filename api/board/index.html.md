@@ -343,7 +343,6 @@
         * `dateLastView`
         * `shortUrl`
   * **Examples**
-
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046?lists=open&list_fields=name&fields=name,desc&key=[application_key]&token=[optional_auth_token]
 
@@ -390,7 +389,6 @@
         * `dateLastView`
         * `shortUrl`
   * **Examples**
-
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/idOrganization?key=[application_key]&token=[optional_auth_token]
     
@@ -702,7 +700,6 @@
         * `url`
         * `username`
   * **Examples**
-
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/actions?filter=addMemberToCard,removeMemberFromCard&key=[application_key]&token=[optional_auth_token]
     
@@ -987,7 +984,6 @@
         * `subscribed`
         * `url`
   * **Examples**
-
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/cards?fields=name,idList,url&key=[application_key]&token=[optional_auth_token]
     
@@ -1271,7 +1267,6 @@
         * `idCard`
         * `pos`
   * **Examples**
-
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/checklists?key=[application_key]&token=[optional_auth_token]
     
@@ -1482,7 +1477,6 @@
         * `pos`
         * `subscribed`
   * **Examples**
-
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/lists?cards=open&card_fields=name&fields=name&key=[application_key]&token=[optional_auth_token]
     
@@ -1558,7 +1552,6 @@
       * **Default:** `false`
       * **Valid Values:** `true` or `false`; works for premium organizations only.
   * **Examples**
-
     
     https://api.trello.com/1/boards/4eea4ffc91e31d1746000046/members?key=[application_key]&token=[optional_auth_token]
     
