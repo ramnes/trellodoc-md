@@ -28,8 +28,7 @@ Generate a developer key by logging into Trello and visiting
 
 [https://trello.com/1/appKey/generate](https://trello.com/1/appKey/generate)
 
-## Follow the Development of the API[¶](README.md#follow-the-development-of-
-the-api)
+## Follow the Development of the API[¶](README.md#follow-the-development-of-the-api)
 
 Work on the Trello API is being tracked at [https://trello.com/api](https://trello.com/api])
 
@@ -57,7 +56,7 @@ Work on the Trello API is being tracked at [https://trello.com/api](https://trel
     * [http://www.twilio.com/gallery/projects/Twellio](http://www.twilio.com/gallery/projects/Twellio) (Send cards to Trello via SMS)
     * [https://bitbucket.org/JakeGinnivan/taskboards](https://bitbucket.org/JakeGinnivan/taskboards) (A WP7 Trello App)
 
-## This is not the help I was looking for.[¶](README.md#this-is-not-the-help-i-was-looking-for)
+## This is not the help I was looking for[¶](README.md#this-is-not-the-help-i-was-looking-for)
 
 For help using the Trello website, visit [https://trello.com/guide](https://trello.com/guide).
 
