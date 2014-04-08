@@ -1,6 +1,6 @@
 # notification[¶](index.html.md#notification)
 
-## GET /1/notifications/[idNotification][¶](index.html.md#get-1-notifications-idnotification)
+## GET /1/notifications/[notif_id][¶](index.html.md#get-1-notifications-idnotification)
 
   * **Required permissions:** read
   * **Arguments**
@@ -143,7 +143,7 @@
         * `url`
         * `username`
 
-## GET /1/notifications/[idNotification]/[field][¶](index.html.md#get-1-notifications-idnotification-field)
+## GET /1/notifications/[notif_id]/[field][¶](index.html.md#get-1-notifications-idnotification-field)
 
   * **Arguments**
     * `field` (required)
@@ -154,7 +154,7 @@
         * `data`
         * `idMemberCreator`
 
-## GET /1/notifications/[idNotification]/board[¶](index.html.md#get-1-notifications-idnotification-board)
+## GET /1/notifications/[notif_id]/board[¶](index.html.md#get-1-notifications-idnotification-board)
 
   * **Required permissions:** read
   * **Arguments**
@@ -181,7 +181,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/notifications/[idNotification]/board/[field][¶](index.html.md#get-1-notifications-idnotification-board-field)
+## GET /1/notifications/[notif_id]/board/[field][¶](index.html.md#get-1-notifications-idnotification-board-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -207,7 +207,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/notifications/[idNotification]/card[¶](index.html.md#get-1-notifications-idnotification-card)
+## GET /1/notifications/[notif_id]/card[¶](index.html.md#get-1-notifications-idnotification-card)
 
   * **Required permissions:** read
   * **Arguments**
@@ -237,7 +237,7 @@
         * `subscribed`
         * `url`
 
-## GET /1/notifications/[idNotification]/card/[field][¶](index.html.md#get-1-notifications-idnotification-card-field)
+## GET /1/notifications/[notif_id]/card/[field][¶](index.html.md#get-1-notifications-idnotification-card-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -266,12 +266,12 @@
         * `subscribed`
         * `url`
 
-## GET /1/notifications/[idNotification]/entities[¶](index.html.md#get-1-notifications-idnotification-entities)
+## GET /1/notifications/[notif_id]/entities[¶](index.html.md#get-1-notifications-idnotification-entities)
 
   * **Required permissions:** read
   * **Arguments:** None
 
-## GET /1/notifications/[idNotification]/list[¶](index.html.md#get-1-notifications-idnotification-list)
+## GET /1/notifications/[notif_id]/list[¶](index.html.md#get-1-notifications-idnotification-list)
 
   * **Required permissions:** read
   * **Arguments**
@@ -284,7 +284,7 @@
         * `pos`
         * `subscribed`
 
-## GET /1/notifications/[idNotification]/list/[field][¶](index.html.md#get-1-notifications-idnotification-list-field)
+## GET /1/notifications/[notif_id]/list/[field][¶](index.html.md#get-1-notifications-idnotification-list-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -296,7 +296,7 @@
         * `pos`
         * `subscribed`
 
-## GET /1/notifications/[idNotification]/member[¶](index.html.md#get-1-notifications-idnotification-member)
+## GET /1/notifications/[notif_id]/member[¶](index.html.md#get-1-notifications-idnotification-member)
 
   * **Required permissions:** read
   * **Arguments**
@@ -332,7 +332,7 @@
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/notifications/[idNotification]/member/[field][¶](index.html.md#get-1-notifications-idnotification-member-field)
+## GET /1/notifications/[notif_id]/member/[field][¶](index.html.md#get-1-notifications-idnotification-member-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -367,7 +367,7 @@
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/notifications/[idNotification]/memberCreator[¶](index.html.md#get-1-notifications-idnotification-membercreator)
+## GET /1/notifications/[notif_id]/memberCreator[¶](index.html.md#get-1-notifications-idnotification-membercreator)
 
   * **Required permissions:** read
   * **Arguments**
@@ -403,7 +403,7 @@
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/notifications/[idNotification]/memberCreator/[field][¶](index.html.md#get-1-notifications-idnotification-membercreator-field)
+## GET /1/notifications/[notif_id]/memberCreator/[field][¶](index.html.md#get-1-notifications-idnotification-membercreator-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -438,7 +438,7 @@
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/notifications/[idNotification]/organization[¶](index.html.md#get-1-notifications-idnotification-organization)
+## GET /1/notifications/[notif_id]/organization[¶](index.html.md#get-1-notifications-idnotification-organization)
 
   * **Required permissions:** read
   * **Arguments**
@@ -461,7 +461,7 @@
         * `logoHash`
         * `premiumFeatures`
 
-## GET /1/notifications/[idNotification]/organization/[field][¶](index.html.md#get-1-notifications-idnotification-organization-field)
+## GET /1/notifications/[notif_id]/organization/[field][¶](index.html.md#get-1-notifications-idnotification-organization-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -483,7 +483,7 @@
         * `logoHash`
         * `premiumFeatures`
 
-## PUT /1/notifications/[idNotification][¶](index.html.md#put-1-notifications-idnotification)
+## PUT /1/notifications/[notif_id][¶](index.html.md#put-1-notifications-idnotification)
 
   * **Required permissions:** read
   * **Arguments**
@@ -492,7 +492,7 @@
         * `true`
         * `false`
 
-## PUT /1/notifications/[idNotification]/unread[¶](index.html.md#put-1-notifications-idnotification-unread)
+## PUT /1/notifications/[notif_id]/unread[¶](index.html.md#put-1-notifications-idnotification-unread)
 
   * **Required permissions:** write
   * **Arguments**

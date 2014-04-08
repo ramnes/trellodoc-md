@@ -124,11 +124,11 @@
   * **Required permissions:** read
   * **Arguments:** None
 
-## GET /1/tokens/[token]/webhooks/[idWebhook][¶](index.html.md#get-1-tokens-token-webhooks-idwebhook)
+## GET /1/tokens/[token]/webhooks/[webhook_id][¶](index.html.md#get-1-tokens-token-webhooks-idwebhook)
 
   * **Required permissions:** read
   * **Arguments**
-    * `idWebhook` (required)
+    * `webhook_id` (required)
       * **Valid Values:** The id of the webhook
 
 ## PUT /1/tokens/[token]/webhooks[¶](index.html.md#put-1-tokens-token-webhooks)
@@ -158,11 +158,11 @@
   * **Required permissions:** write
   * **Arguments:** None
 
-## DELETE /1/tokens/[token]/webhooks/[idWebhook][¶](index.html.md#delete-1-tokens-token-webhooks-idwebhook)
+## DELETE /1/tokens/[token]/webhooks/[webhook_id][¶](index.html.md#delete-1-tokens-token-webhooks-idwebhook)
 
   * **Required permissions:** read
   * **Arguments**
-    * `idWebhook` (required)
+    * `webhook_id` (required)
       * **Valid Values:** The id of the webhook
 
 (C) Copyright 2013, Fog Creek Software. Created using

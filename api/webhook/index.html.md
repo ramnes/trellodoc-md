@@ -1,11 +1,11 @@
 # webhook[¶](index.html.md#webhook)
 
-## GET /1/webhooks/[idWebhook][¶](index.html.md#get-1-webhooks-idwebhook)
+## GET /1/webhooks/[webhook_id][¶](index.html.md#get-1-webhooks-idwebhook)
 
   * **Required permissions:** read
   * **Arguments:** None
 
-## GET /1/webhooks/[idWebhook]/[field][¶](index.html.md#get-1-webhooks-idwebhook-field)
+## GET /1/webhooks/[webhook_id]/[field][¶](index.html.md#get-1-webhooks-idwebhook-field)
 
   * **Arguments**
     * `field` (required)
@@ -15,7 +15,7 @@
         * `callbackURL`
         * `active`
 
-## PUT /1/webhooks/[idWebhook][¶](index.html.md#put-1-webhooks-idwebhook)
+## PUT /1/webhooks/[webhook_id][¶](index.html.md#put-1-webhooks-idwebhook)
 
   * **Required permissions:** read
   * **Arguments**
@@ -41,7 +41,7 @@
     * `idModel` (required)
       * **Valid Values:** id of the model that should be hooked
 
-## PUT /1/webhooks/[idWebhook]/active[¶](index.html.md#put-1-webhooks-idwebhook-active)
+## PUT /1/webhooks/[webhook_id]/active[¶](index.html.md#put-1-webhooks-idwebhook-active)
 
   * **Required permissions:** read
   * **Arguments**
@@ -50,21 +50,21 @@
         * `true`
         * `false`
 
-## PUT /1/webhooks/[idWebhook]/callbackURL[¶](index.html.md#put-1-webhooks-idwebhook-callbackurl)
+## PUT /1/webhooks/[webhook_id]/callbackURL[¶](index.html.md#put-1-webhooks-idwebhook-callbackurl)
 
   * **Required permissions:** read
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A valid URL that is reachable with a HEAD request
 
-## PUT /1/webhooks/[idWebhook]/description[¶](index.html.md#put-1-webhooks-idwebhook-description)
+## PUT /1/webhooks/[webhook_id]/description[¶](index.html.md#put-1-webhooks-idwebhook-description)
 
   * **Required permissions:** read
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/webhooks/[idWebhook]/idModel[¶](index.html.md#put-1-webhooks-idwebhook-idmodel)
+## PUT /1/webhooks/[webhook_id]/idModel[¶](index.html.md#put-1-webhooks-idwebhook-idmodel)
 
   * **Required permissions:** read
   * **Arguments**
@@ -82,7 +82,7 @@
     * `idModel` (required)
       * **Valid Values:** id of the model that should be hooked
 
-## DELETE /1/webhooks/[idWebhook][¶](index.html.md#delete-1-webhooks-idwebhook)
+## DELETE /1/webhooks/[webhook_id][¶](index.html.md#delete-1-webhooks-idwebhook)
 
   * **Required permissions:** read
   * **Arguments:** None

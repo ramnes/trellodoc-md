@@ -1027,7 +1027,7 @@
         * `closed`
         * `all`
 
-## GET /1/boards/[board_id]/cards/[idCard][¶](index.html.md#get-1-boards-board-id-cards-idcard)
+## GET /1/boards/[board_id]/cards/[card_id][¶](index.html.md#get-1-boards-board-id-cards-idcard)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1592,7 +1592,7 @@
         * `owners`
         * `all`
 
-## GET /1/boards/[board_id]/members/[idMember]/cards[¶](index.html.md#get-1-boards-board-id-members-idmember-cards)
+## GET /1/boards/[board_id]/members/[member_id]/cards[¶](index.html.md#get-1-boards-board-id-members-idmember-cards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1874,7 +1874,7 @@
         * `url`
         * `username`
 
-## GET /1/boards/[board_id]/memberships/[idMembership][¶](index.html.md#get-1-boards-board-id-memberships-idmembership)
+## GET /1/boards/[board_id]/memberships/[membership_id][¶](index.html.md#get-1-boards-board-id-memberships-idmembership)
 
   * **Required permissions:** read
   * **Arguments**
@@ -2103,7 +2103,7 @@
         * `observer`
         * `admin`
 
-## PUT /1/boards/[board_id]/members/[idMember][¶](index.html.md#put-1-boards-board-id-members-idmember)
+## PUT /1/boards/[board_id]/members/[member_id][¶](index.html.md#put-1-boards-board-id-members-idmember)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2115,7 +2115,7 @@
         * `observer`
         * `admin`
 
-## PUT /1/boards/[board_id]/memberships/[idMembership][¶](index.html.md#put-1-boards-board-id-memberships-idmembership)
+## PUT /1/boards/[board_id]/memberships/[membership_id][¶](index.html.md#put-1-boards-board-id-memberships-idmembership)
 
   * **Required permissions:** write
   * **Arguments**
@@ -2413,14 +2413,14 @@
         * `cardAging`
         * `calendar`
 
-## DELETE /1/boards/[board_id]/members/[idMember][¶](index.html.md#delete-1-boards-board-id-members-idmember)
+## DELETE /1/boards/[board_id]/members/[member_id][¶](index.html.md#delete-1-boards-board-id-members-idmember)
 
   * **Required permissions:** write
   * **Arguments**
     * `idMember` (required)
       * **Valid Values:** An id, username, or organization name
 
-## DELETE /1/boards/[board_id]/powerUps/[powerUp][¶](index.html.md#delete-1-boards-board-id-powerups-powerup)
+## DELETE /1/boards/[board_id]/powerUps/[powerup][¶](index.html.md#delete-1-boards-board-id-powerups-powerup)
 
   * **Required permissions:** write
   * **Arguments**

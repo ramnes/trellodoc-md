@@ -1,6 +1,6 @@
 # checklist[¶](index.html.md#checklist)
 
-## GET /1/checklists/[idChecklist][¶](index.html.md#get-1-checklists-idchecklist)
+## GET /1/checklists/[checklist_id][¶](index.html.md#get-1-checklists-idchecklist)
 
   * **Required permissions:** read
   * **Arguments**
@@ -91,7 +91,7 @@
     }
 ```
 
-## GET /1/checklists/[idChecklist]/[field][¶](index.html.md#get-1-checklists-idchecklist-field)
+## GET /1/checklists/[checklist_id]/[field][¶](index.html.md#get-1-checklists-idchecklist-field)
 
   * **Arguments**
     * `field` (required)
@@ -101,7 +101,7 @@
         * `idCard`
         * `pos`
 
-## GET /1/checklists/[idChecklist]/board[¶](index.html.md#get-1-checklists-idchecklist-board)
+## GET /1/checklists/[checklist_id]/board[¶](index.html.md#get-1-checklists-idchecklist-board)
 
   * **Required permissions:** read
   * **Arguments**
@@ -128,7 +128,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/checklists/[idChecklist]/board/[field][¶](index.html.md#get-1-checklists-idchecklist-board-field)
+## GET /1/checklists/[checklist_id]/board/[field][¶](index.html.md#get-1-checklists-idchecklist-board-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -154,7 +154,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/checklists/[idChecklist]/cards[¶](index.html.md#get-1-checklists-idchecklist-cards)
+## GET /1/checklists/[checklist_id]/cards[¶](index.html.md#get-1-checklists-idchecklist-cards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -300,7 +300,7 @@
         * `subscribed`
         * `url`
 
-## GET /1/checklists/[idChecklist]/cards/[filter][¶](index.html.md#get-1-checklists-idchecklist-cards-filter)
+## GET /1/checklists/[checklist_id]/cards/[filter][¶](index.html.md#get-1-checklists-idchecklist-cards-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -310,7 +310,7 @@
         * `closed`
         * `all`
 
-## GET /1/checklists/[idChecklist]/checkItems[¶](index.html.md#get-1-checklists-idchecklist-checkitems)
+## GET /1/checklists/[checklist_id]/checkItems[¶](index.html.md#get-1-checklists-idchecklist-checkitems)
 
   * **Required permissions:** read
   * **Arguments**
@@ -353,7 +353,7 @@
     }]
 ```
 
-## GET /1/checklists/[idChecklist]/checkItems/[idCheckItem][¶](index.html.md#get-1-checklists-idchecklist-checkitems-idcheckitem)
+## GET /1/checklists/[checklist_id]/checkItems/[checkitem_id][¶](index.html.md#get-1-checklists-idchecklist-checkitems-idcheckitem)
 
   * **Required permissions:** read
   * **Arguments**
@@ -368,7 +368,7 @@
     * `idCheckItem` (required)
       * **Valid Values:** id of the checkitem to retrieve
 
-## PUT /1/checklists/[idChecklist][¶](index.html.md#put-1-checklists-idchecklist)
+## PUT /1/checklists/[checklist_id][¶](index.html.md#put-1-checklists-idchecklist)
 
   * **Required permissions:** read
   * **Arguments**
@@ -379,21 +379,21 @@
     * `pos` (optional)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## PUT /1/checklists/[idChecklist]/idCard[¶](index.html.md#put-1-checklists-idchecklist-idcard)
+## PUT /1/checklists/[checklist_id]/idCard[¶](index.html.md#put-1-checklists-idchecklist-idcard)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** The id of the card that the checklist is on
 
-## PUT /1/checklists/[idChecklist]/name[¶](index.html.md#put-1-checklists-idchecklist-name)
+## PUT /1/checklists/[checklist_id]/name[¶](index.html.md#put-1-checklists-idchecklist-name)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## PUT /1/checklists/[idChecklist]/pos[¶](index.html.md#put-1-checklists-idchecklist-pos)
+## PUT /1/checklists/[checklist_id]/pos[¶](index.html.md#put-1-checklists-idchecklist-pos)
 
   * **Required permissions:** write
   * **Arguments**
@@ -416,7 +416,7 @@
     * `idChecklistSource` (optional)
       * **Valid Values:** The id of the source checklist to copy into a new checklist.
 
-## POST /1/checklists/[idChecklist]/checkItems[¶](index.html.md#post-1-checklists-idchecklist-checkitems)
+## POST /1/checklists/[checklist_id]/checkItems[¶](index.html.md#post-1-checklists-idchecklist-checkitems)
 
   * **Required permissions:** write
   * **Arguments**
@@ -431,12 +431,12 @@
         * `true`
         * `false`
 
-## DELETE /1/checklists/[idChecklist][¶](index.html.md#delete-1-checklists-idchecklist)
+## DELETE /1/checklists/[checklist_id][¶](index.html.md#delete-1-checklists-idchecklist)
 
   * **Required permissions:** write
   * **Arguments:** None
 
-## DELETE /1/checklists/[idChecklist]/checkItems/[idCheckItem][¶](index.html.md#delete-1-checklists-idchecklist-checkitems-idcheckitem)
+## DELETE /1/checklists/[checklist_id]/checkItems/[checkitem_id][¶](index.html.md#delete-1-checklists-idchecklist-checkitems-idcheckitem)
 
   * **Required permissions:** write
   * **Arguments**

@@ -1,6 +1,6 @@
 # list[¶](index.html.md#list)
 
-## GET /1/lists/[idList][¶](index.html.md#get-1-lists-idlist)
+## GET /1/lists/[list_id][¶](index.html.md#get-1-lists-idlist)
 
   * **Required permissions:** read
   * **Arguments**
@@ -60,7 +60,7 @@
     }
 ```
 
-## GET /1/lists/[idList]/[field][¶](index.html.md#get-1-lists-idlist-field)
+## GET /1/lists/[list_id]/[field][¶](index.html.md#get-1-lists-idlist-field)
 
   * **Arguments**
     * `field` (required)
@@ -112,7 +112,7 @@
     }
 ```
 
-## GET /1/lists/[idList]/actions[¶](index.html.md#get-1-lists-idlist-actions)
+## GET /1/lists/[list_id]/actions[¶](index.html.md#get-1-lists-idlist-actions)
 
   * **Required permissions:** read
   * **Arguments**
@@ -298,7 +298,7 @@
     }]
 ```
 
-## GET /1/lists/[idList]/board[¶](index.html.md#get-1-lists-idlist-board)
+## GET /1/lists/[list_id]/board[¶](index.html.md#get-1-lists-idlist-board)
 
   * **Required permissions:** read
   * **Arguments**
@@ -325,7 +325,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/lists/[idList]/board/[field][¶](index.html.md#get-1-lists-idlist-board-field)
+## GET /1/lists/[list_id]/board/[field][¶](index.html.md#get-1-lists-idlist-board-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -351,7 +351,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/lists/[idList]/cards[¶](index.html.md#get-1-lists-idlist-cards)
+## GET /1/lists/[list_id]/cards[¶](index.html.md#get-1-lists-idlist-cards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -539,7 +539,7 @@
     }]
 ```
 
-## GET /1/lists/[idList]/cards/[filter][¶](index.html.md#get-1-lists-idlist-cards-filter)
+## GET /1/lists/[list_id]/cards/[filter][¶](index.html.md#get-1-lists-idlist-cards-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -549,7 +549,7 @@
         * `closed`
         * `all`
 
-## PUT /1/lists/[idList][¶](index.html.md#put-1-lists-idlist)
+## PUT /1/lists/[list_id][¶](index.html.md#put-1-lists-idlist)
 
   * **Required permissions:** read
   * **Arguments**
@@ -568,7 +568,7 @@
         * `true`
         * `false`
 
-## PUT /1/lists/[idList]/closed[¶](index.html.md#put-1-lists-idlist-closed)
+## PUT /1/lists/[list_id]/closed[¶](index.html.md#put-1-lists-idlist-closed)
 
   * **Required permissions:** write
   * **Arguments**
@@ -577,7 +577,7 @@
         * `true`
         * `false`
 
-## PUT /1/lists/[idList]/idBoard[¶](index.html.md#put-1-lists-idlist-idboard)
+## PUT /1/lists/[list_id]/idBoard[¶](index.html.md#put-1-lists-idlist-idboard)
 
   * **Required permissions:** write
   * **Arguments**
@@ -587,21 +587,21 @@
       * **Default:** `top`
       * **Valid Values:** position of the list on the new board
 
-## PUT /1/lists/[idList]/name[¶](index.html.md#put-1-lists-idlist-name)
+## PUT /1/lists/[list_id]/name[¶](index.html.md#put-1-lists-idlist-name)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## PUT /1/lists/[idList]/pos[¶](index.html.md#put-1-lists-idlist-pos)
+## PUT /1/lists/[list_id]/pos[¶](index.html.md#put-1-lists-idlist-pos)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## PUT /1/lists/[idList]/subscribed[¶](index.html.md#put-1-lists-idlist-subscribed)
+## PUT /1/lists/[list_id]/subscribed[¶](index.html.md#put-1-lists-idlist-subscribed)
 
   * **Required permissions:** read
   * **Arguments**
@@ -624,12 +624,12 @@
       * **Default:** `top`
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## POST /1/lists/[idList]/archiveAllCards[¶](index.html.md#post-1-lists-idlist-archiveallcards)
+## POST /1/lists/[list_id]/archiveAllCards[¶](index.html.md#post-1-lists-idlist-archiveallcards)
 
   * **Required permissions:** write
   * **Arguments:** None
 
-## POST /1/lists/[idList]/cards[¶](index.html.md#post-1-lists-idlist-cards)
+## POST /1/lists/[list_id]/cards[¶](index.html.md#post-1-lists-idlist-cards)
 
   * **Required permissions:** write
   * **Arguments**

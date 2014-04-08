@@ -1,6 +1,6 @@
 # card[¶](index.html.md#card)
 
-## GET /1/cards/[card id or shortlink][¶](index.html.md#get-1-cards-card-id-or-shortlink)
+## GET /1/cards/[card_id or shortlink][¶](index.html.md#get-1-cards-card-id-or-shortlink)
 
   * **Required permissions:** read
   * **Arguments**
@@ -256,7 +256,7 @@
     }
 ```
 
-## GET /1/cards/[card id or shortlink]/[field][¶](index.html.md#get-1-cards-card-id-or-shortlink-field)
+## GET /1/cards/[card_id or shortlink]/[field][¶](index.html.md#get-1-cards-card-id-or-shortlink-field)
 
   * **Arguments**
     * `field` (required)
@@ -284,7 +284,7 @@
         * `subscribed`
         * `url`
 
-## GET /1/cards/[card id or shortlink]/actions[¶](index.html.md#get-1-cards-card-id-or-shortlink-actions)
+## GET /1/cards/[card_id or shortlink]/actions[¶](index.html.md#get-1-cards-card-id-or-shortlink-actions)
 
   * **Required permissions:** read
   * **Arguments**
@@ -413,7 +413,7 @@
         * `url`
         * `username`
 
-## GET /1/cards/[card id or shortlink]/attachments[¶](index.html.md#get-1-cards-card-id-or-shortlink-attachments)
+## GET /1/cards/[card_id or shortlink]/attachments[¶](index.html.md#get-1-cards-card-id-or-shortlink-attachments)
 
   * **Required permissions:** read
   * **Arguments**
@@ -433,7 +433,7 @@
       * **Default:** `true`
       * **Valid Values:** A boolean value or &quot;cover&quot; for only card cover attachments
 
-## GET /1/cards/[card id or shortlink]/attachments/[idAttachment][¶](index.html.md#get-1-cards-card-id-or-shortlink-attachments-idattachment)
+## GET /1/cards/[card_id or shortlink]/attachments/[attachment_id][¶](index.html.md#get-1-cards-card-id-or-shortlink-attachments-idattachment)
 
   * **Required permissions:** read
   * **Arguments**
@@ -452,7 +452,7 @@
         * `previews`
         * `url`
 
-## GET /1/cards/[card id or shortlink]/board[¶](index.html.md#get-1-cards-card-id-or-shortlink-board)
+## GET /1/cards/[card_id or shortlink]/board[¶](index.html.md#get-1-cards-card-id-or-shortlink-board)
 
   * **Required permissions:** read
   * **Arguments**
@@ -479,7 +479,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/cards/[card id or shortlink]/board/[field][¶](index.html.md#get-1-cards-card-id-or-shortlink-board-field)
+## GET /1/cards/[card_id or shortlink]/board/[field][¶](index.html.md#get-1-cards-card-id-or-shortlink-board-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -505,7 +505,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/cards/[card id or shortlink]/checkItemStates[¶](index.html.md#get-1-cards-card-id-or-shortlink-checkitemstates)
+## GET /1/cards/[card_id or shortlink]/checkItemStates[¶](index.html.md#get-1-cards-card-id-or-shortlink-checkitemstates)
 
   * **Required permissions:** read
   * **Arguments**
@@ -515,7 +515,7 @@
         * `idCheckItem`
         * `state`
 
-## GET /1/cards/[card id or shortlink]/checklists[¶](index.html.md#get-1-cards-card-id-or-shortlink-checklists)
+## GET /1/cards/[card_id or shortlink]/checklists[¶](index.html.md#get-1-cards-card-id-or-shortlink-checklists)
 
   * **Required permissions:** read
   * **Arguments**
@@ -578,7 +578,7 @@
         * `idCard`
         * `pos`
 
-## GET /1/cards/[card id or shortlink]/list[¶](index.html.md#get-1-cards-card-id-or-shortlink-list)
+## GET /1/cards/[card_id or shortlink]/list[¶](index.html.md#get-1-cards-card-id-or-shortlink-list)
 
   * **Required permissions:** read
   * **Arguments**
@@ -591,7 +591,7 @@
         * `pos`
         * `subscribed`
 
-## GET /1/cards/[card id or shortlink]/list/[field][¶](index.html.md#get-1-cards-card-id-or-shortlink-list-field)
+## GET /1/cards/[card_id or shortlink]/list/[field][¶](index.html.md#get-1-cards-card-id-or-shortlink-list-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -603,7 +603,7 @@
         * `pos`
         * `subscribed`
 
-## GET /1/cards/[card id or shortlink]/members[¶](index.html.md#get-1-cards-card-id-or-shortlink-members)
+## GET /1/cards/[card_id or shortlink]/members[¶](index.html.md#get-1-cards-card-id-or-shortlink-members)
 
   * **Required permissions:** read
   * **Arguments**
@@ -623,7 +623,7 @@
         * `url`
         * `username`
 
-## GET /1/cards/[card id or shortlink]/membersVoted[¶](index.html.md#get-1-cards-card-id-or-shortlink-membersvoted)
+## GET /1/cards/[card_id or shortlink]/membersVoted[¶](index.html.md#get-1-cards-card-id-or-shortlink-membersvoted)
 
   * **Required permissions:** read
   * **Arguments**
@@ -643,7 +643,7 @@
         * `url`
         * `username`
 
-## GET /1/cards/[card id or shortlink]/stickers[¶](index.html.md#get-1-cards-card-id-or-shortlink-stickers)
+## GET /1/cards/[card_id or shortlink]/stickers[¶](index.html.md#get-1-cards-card-id-or-shortlink-stickers)
 
   * **Required permissions:** read
   * **Arguments**
@@ -658,7 +658,7 @@
         * `imageUrl`
         * `imageScaled`
 
-## GET /1/cards/[card id or shortlink]/stickers/[idSticker][¶](index.html.md#get-1-cards-card-id-or-shortlink-stickers-idsticker)
+## GET /1/cards/[card_id or shortlink]/stickers/[sticker_id][¶](index.html.md#get-1-cards-card-id-or-shortlink-stickers-idsticker)
 
   * **Required permissions:** read
   * **Arguments**
@@ -675,7 +675,7 @@
         * `imageUrl`
         * `imageScaled`
 
-## PUT /1/cards/[card id or shortlink][¶](index.html.md#put-1-cards-card-id-or-shortlink)
+## PUT /1/cards/[card_id or shortlink][¶](index.html.md#put-1-cards-card-id-or-shortlink)
 
   * **Required permissions:** read
   * **Arguments**
@@ -705,7 +705,7 @@
         * `true`
         * `false`
 
-## PUT /1/cards/[card id or shortlink]/actions/[idAction]/comments[¶](index.html.md#put-1-cards-card-id-or-shortlink-actions-idaction-comments)
+## PUT /1/cards/[card_id or shortlink]/actions/[action_id]/comments[¶](index.html.md#put-1-cards-card-id-or-shortlink-actions-idaction-comments)
 
   * **Notes:** This can only be done by the original author of the comment.
   * **Required permissions:** read
@@ -715,7 +715,7 @@
     * `text` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## PUT /1/cards/[card id or shortlink]/checklist/[idChecklist]/checkItem/[idCheckItem]/name[¶](index.html.md#put-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem-name)
+## PUT /1/cards/[card_id or shortlink]/checklist/[checklist_id]/checkItem/[checkitem_id]/name[¶](index.html.md#put-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem-name)
 
   * **Required permissions:** write
   * **Arguments**
@@ -726,7 +726,7 @@
     * `value` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## PUT /1/cards/[card id or shortlink]/checklist/[idChecklist]/checkItem/[idCheckItem]/pos[¶](index.html.md#put-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem-pos)
+## PUT /1/cards/[card_id or shortlink]/checklist/[checklist_id]/checkItem/[checkitem_id]/pos[¶](index.html.md#put-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem-pos)
 
   * **Required permissions:** write
   * **Arguments**
@@ -737,7 +737,7 @@
     * `value` (required)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## PUT /1/cards/[card id or shortlink]/checklist/[idChecklist]/checkItem/[idCheckItem]/state[¶](index.html.md#put-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem-state)
+## PUT /1/cards/[card_id or shortlink]/checklist/[checklist_id]/checkItem/[checkitem_id]/state[¶](index.html.md#put-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem-state)
 
   * **Required permissions:** write
   * **Arguments**
@@ -752,7 +752,7 @@
         * `complete`
         * `incomplete`
 
-## PUT /1/cards/[card id or shortlink]/checklist/[idChecklistCurrent]/checkItem/[idCheckItem][¶](index.html.md#put-1-cards-card-id-or-shortlink-checklist-idchecklistcurrent-checkitem-idcheckitem)
+## PUT /1/cards/[card_id or shortlink]/checklist/[checklistcurrent_id]/checkItem/[checkitem_id][¶](index.html.md#put-1-cards-card-id-or-shortlink-checklist-idchecklistcurrent-checkitem-idcheckitem)
 
   * **Required permissions:** write
   * **Arguments**
@@ -773,7 +773,7 @@
     * `pos` (optional)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## PUT /1/cards/[card id or shortlink]/closed[¶](index.html.md#put-1-cards-card-id-or-shortlink-closed)
+## PUT /1/cards/[card_id or shortlink]/closed[¶](index.html.md#put-1-cards-card-id-or-shortlink-closed)
 
   * **Required permissions:** write
   * **Arguments**
@@ -782,28 +782,28 @@
         * `true`
         * `false`
 
-## PUT /1/cards/[card id or shortlink]/desc[¶](index.html.md#put-1-cards-card-id-or-shortlink-desc)
+## PUT /1/cards/[card_id or shortlink]/desc[¶](index.html.md#put-1-cards-card-id-or-shortlink-desc)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/cards/[card id or shortlink]/due[¶](index.html.md#put-1-cards-card-id-or-shortlink-due)
+## PUT /1/cards/[card_id or shortlink]/due[¶](index.html.md#put-1-cards-card-id-or-shortlink-due)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A date, or `null`
 
-## PUT /1/cards/[card id or shortlink]/idAttachmentCover[¶](index.html.md#put-1-cards-card-id-or-shortlink-idattachmentcover)
+## PUT /1/cards/[card_id or shortlink]/idAttachmentCover[¶](index.html.md#put-1-cards-card-id-or-shortlink-idattachmentcover)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** Id of the image attachment of this card to use as its cover, or null for no cover
 
-## PUT /1/cards/[card id or shortlink]/idBoard[¶](index.html.md#put-1-cards-card-id-or-shortlink-idboard)
+## PUT /1/cards/[card_id or shortlink]/idBoard[¶](index.html.md#put-1-cards-card-id-or-shortlink-idboard)
 
   * **Required permissions:** write
   * **Arguments**
@@ -812,41 +812,41 @@
     * `idList` (optional)
       * **Valid Values:** id of the list that the card should be moved to on the new board
 
-## PUT /1/cards/[card id or shortlink]/idList[¶](index.html.md#put-1-cards-card-id-or-shortlink-idlist)
+## PUT /1/cards/[card_id or shortlink]/idList[¶](index.html.md#put-1-cards-card-id-or-shortlink-idlist)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** id of the list the card should be moved to
 
-## PUT /1/cards/[card id or shortlink]/idMembers[¶](index.html.md#put-1-cards-card-id-or-shortlink-idmembers)
+## PUT /1/cards/[card_id or shortlink]/idMembers[¶](index.html.md#put-1-cards-card-id-or-shortlink-idmembers)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A comma-separated list of objectIds, 24-character hex strings
 
-## PUT /1/cards/[card id or shortlink]/labels[¶](index.html.md#put-1-cards-card-id-or-shortlink-labels)
+## PUT /1/cards/[card_id or shortlink]/labels[¶](index.html.md#put-1-cards-card-id-or-shortlink-labels)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
 
-## PUT /1/cards/[card id or shortlink]/name[¶](index.html.md#put-1-cards-card-id-or-shortlink-name)
+## PUT /1/cards/[card_id or shortlink]/name[¶](index.html.md#put-1-cards-card-id-or-shortlink-name)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## PUT /1/cards/[card id or shortlink]/pos[¶](index.html.md#put-1-cards-card-id-or-shortlink-pos)
+## PUT /1/cards/[card_id or shortlink]/pos[¶](index.html.md#put-1-cards-card-id-or-shortlink-pos)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## PUT /1/cards/[card id or shortlink]/stickers/[idSticker][¶](index.html.md#put-1-cards-card-id-or-shortlink-stickers-idsticker)
+## PUT /1/cards/[card_id or shortlink]/stickers/[sticker_id][¶](index.html.md#put-1-cards-card-id-or-shortlink-stickers-idsticker)
 
   * **Required permissions:** write
   * **Arguments**
@@ -858,7 +858,7 @@
       * **Valid Values:** Valid Z values for stickers, must be an integer
     * `rotate` (optional)
 
-## PUT /1/cards/[card id or shortlink]/subscribed[¶](index.html.md#put-1-cards-card-id-or-shortlink-subscribed)
+## PUT /1/cards/[card_id or shortlink]/subscribed[¶](index.html.md#put-1-cards-card-id-or-shortlink-subscribed)
 
   * **Required permissions:** read
   * **Arguments**
@@ -891,14 +891,14 @@
       * **Default:** `all`
       * **Valid Values:** Properties of the card to copy over from the source.
 
-## POST /1/cards/[card id or shortlink]/actions/comments[¶](index.html.md#post-1-cards-card-id-or-shortlink-actions-comments)
+## POST /1/cards/[card_id or shortlink]/actions/comments[¶](index.html.md#post-1-cards-card-id-or-shortlink-actions-comments)
 
   * **Required permissions:** comments
   * **Arguments**
     * `text` (required)
       * **Valid Values:** a string with a length from `1` to `16384`
 
-## POST /1/cards/[card id or shortlink]/attachments[¶](index.html.md#post-1-cards-card-id-or-shortlink-attachments)
+## POST /1/cards/[card_id or shortlink]/attachments[¶](index.html.md#post-1-cards-card-id-or-shortlink-attachments)
 
   * **Required permissions:** write
   * **Arguments**
@@ -911,7 +911,7 @@
     * `mimeType` (optional)
       * **Valid Values:** a string with a length from `0` to `256`
 
-## POST /1/cards/[card id or shortlink]/checklist/[idChecklist]/checkItem[¶](index.html.md#post-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem)
+## POST /1/cards/[card_id or shortlink]/checklist/[checklist_id]/checkItem[¶](index.html.md#post-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem)
 
   * **Required permissions:** write
   * **Arguments**
@@ -923,7 +923,7 @@
       * **Default:** `bottom`
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## POST /1/cards/[card id or shortlink]/checklist/[idChecklist]/checkItem/[idCheckItem]/convertToCard[¶](index.html.md#post-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem-converttocard)
+## POST /1/cards/[card_id or shortlink]/checklist/[checklist_id]/checkItem/[checkitem_id]/convertToCard[¶](index.html.md#post-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem-converttocard)
 
   * **Required permissions:** write
   * **Arguments**
@@ -932,7 +932,7 @@
     * `idCheckItem` (required)
       * **Valid Values:** The id of the checkitem to modify.
 
-## POST /1/cards/[card id or shortlink]/checklists[¶](index.html.md#post-1-cards-card-id-or-shortlink-checklists)
+## POST /1/cards/[card_id or shortlink]/checklists[¶](index.html.md#post-1-cards-card-id-or-shortlink-checklists)
 
   * **Required permissions:** write
   * **Arguments**
@@ -943,14 +943,14 @@
     * `idChecklistSource` (optional)
       * **Valid Values:** The id of the source checklist to copy into a new checklist.
 
-## POST /1/cards/[card id or shortlink]/idMembers[¶](index.html.md#post-1-cards-card-id-or-shortlink-idmembers)
+## POST /1/cards/[card_id or shortlink]/idMembers[¶](index.html.md#post-1-cards-card-id-or-shortlink-idmembers)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** The id of the member to add to the card
 
-## POST /1/cards/[card id or shortlink]/labels[¶](index.html.md#post-1-cards-card-id-or-shortlink-labels)
+## POST /1/cards/[card_id or shortlink]/labels[¶](index.html.md#post-1-cards-card-id-or-shortlink-labels)
 
   * **Required permissions:** write
   * **Arguments**
@@ -963,19 +963,19 @@
         * `purple`
         * `blue`
 
-## POST /1/cards/[card id or shortlink]/markAssociatedNotificationsRead[¶](index.html.md#post-1-cards-card-id-or-shortlink-markassociatednotificationsread)
+## POST /1/cards/[card_id or shortlink]/markAssociatedNotificationsRead[¶](index.html.md#post-1-cards-card-id-or-shortlink-markassociatednotificationsread)
 
   * **Required permissions:** read
   * **Arguments:** None
 
-## POST /1/cards/[card id or shortlink]/membersVoted[¶](index.html.md#post-1-cards-card-id-or-shortlink-membersvoted)
+## POST /1/cards/[card_id or shortlink]/membersVoted[¶](index.html.md#post-1-cards-card-id-or-shortlink-membersvoted)
 
   * **Required permissions:** voting
   * **Arguments**
     * `value` (required)
       * **Valid Values:** The id of the member to vote &#39;yes&#39; on the card
 
-## POST /1/cards/[card id or shortlink]/stickers[¶](index.html.md#post-1-cards-card-id-or-shortlink-stickers)
+## POST /1/cards/[card_id or shortlink]/stickers[¶](index.html.md#post-1-cards-card-id-or-shortlink-stickers)
 
   * **Required permissions:** write
   * **Arguments**
@@ -988,12 +988,12 @@
     * `rotate` (optional)
       * **Default:** `0`
 
-## DELETE /1/cards/[card id or shortlink][¶](index.html.md#delete-1-cards-card-id-or-shortlink)
+## DELETE /1/cards/[card_id or shortlink][¶](index.html.md#delete-1-cards-card-id-or-shortlink)
 
   * **Required permissions:** write
   * **Arguments:** None
 
-## DELETE /1/cards/[card id or shortlink]/actions/[idAction]/comments[¶](index.html.md#delete-1-cards-card-id-or-shortlink-actions-idaction-comments)
+## DELETE /1/cards/[card_id or shortlink]/actions/[action_id]/comments[¶](index.html.md#delete-1-cards-card-id-or-shortlink-actions-idaction-comments)
 
   * **Notes:** This can only be done by the original author of the comment, or someone with higher permissions than the original author.
   * **Required permissions:** comments
@@ -1001,14 +1001,14 @@
     * `idAction` (required)
       * **Valid Values:** The id of the action.
 
-## DELETE /1/cards/[card id or shortlink]/attachments/[idAttachment][¶](index.html.md#delete-1-cards-card-id-or-shortlink-attachments-idattachment)
+## DELETE /1/cards/[card_id or shortlink]/attachments/[attachment_id][¶](index.html.md#delete-1-cards-card-id-or-shortlink-attachments-idattachment)
 
   * **Required permissions:** write
   * **Arguments**
     * `idAttachment` (required)
       * **Valid Values:** The id of the attachment to remove from the card.
 
-## DELETE /1/cards/[card id or shortlink]/checklist/[idChecklist]/checkItem/[idCheckItem][¶](index.html.md#delete-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem)
+## DELETE /1/cards/[card_id or shortlink]/checklist/[checklist_id]/checkItem/[checkitem_id][¶](index.html.md#delete-1-cards-card-id-or-shortlink-checklist-idchecklist-checkitem-idcheckitem)
 
   * **Required permissions:** write
   * **Arguments**
@@ -1017,21 +1017,21 @@
     * `idCheckItem` (required)
       * **Valid Values:** the id of the check item to remove
 
-## DELETE /1/cards/[card id or shortlink]/checklists/[idChecklist][¶](index.html.md#delete-1-cards-card-id-or-shortlink-checklists-idchecklist)
+## DELETE /1/cards/[card_id or shortlink]/checklists/[checklist_id][¶](index.html.md#delete-1-cards-card-id-or-shortlink-checklists-idchecklist)
 
   * **Required permissions:** write
   * **Arguments**
     * `idChecklist` (required)
       * **Valid Values:** The id of the checklist to remove from the card
 
-## DELETE /1/cards/[card id or shortlink]/idMembers/[idMember][¶](index.html.md#delete-1-cards-card-id-or-shortlink-idmembers-idmember)
+## DELETE /1/cards/[card_id or shortlink]/idMembers/[member_id][¶](index.html.md#delete-1-cards-card-id-or-shortlink-idmembers-idmember)
 
   * **Required permissions:** write
   * **Arguments**
     * `idMember` (required)
       * **Valid Values:** The id of the member to remove from the card
 
-## DELETE /1/cards/[card id or shortlink]/labels/[color][¶](index.html.md#delete-1-cards-card-id-or-shortlink-labels-color)
+## DELETE /1/cards/[card_id or shortlink]/labels/[color][¶](index.html.md#delete-1-cards-card-id-or-shortlink-labels-color)
 
   * **Required permissions:** write
   * **Arguments**
@@ -1044,14 +1044,14 @@
         * `purple`
         * `blue`
 
-## DELETE /1/cards/[card id or shortlink]/membersVoted/[idMember][¶](index.html.md#delete-1-cards-card-id-or-shortlink-membersvoted-idmember)
+## DELETE /1/cards/[card_id or shortlink]/membersVoted/[member_id][¶](index.html.md#delete-1-cards-card-id-or-shortlink-membersvoted-idmember)
 
   * **Required permissions:** voting
   * **Arguments**
     * `idMember` (required)
       * **Valid Values:** The id of the member whose vote to rescind
 
-## DELETE /1/cards/[card id or shortlink]/stickers/[idSticker][¶](index.html.md#delete-1-cards-card-id-or-shortlink-stickers-idsticker)
+## DELETE /1/cards/[card_id or shortlink]/stickers/[sticker_id][¶](index.html.md#delete-1-cards-card-id-or-shortlink-stickers-idsticker)
 
   * **Required permissions:** write
   * **Arguments**

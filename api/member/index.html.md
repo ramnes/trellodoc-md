@@ -1,6 +1,6 @@
 # member[¶](index.html.md#member)
 
-## GET /1/members/[idMember or username][¶](index.html.md#get-1-members-idmember-or-username)
+## GET /1/members/[member_id or username][¶](index.html.md#get-1-members-idmember-or-username)
 
   * **Notes:** If you specify `me` as the username, this call will respond as if you had supplied the username associated with the supplied token
   * **Required permissions:** read
@@ -542,7 +542,7 @@
     }
 ```
 
-## GET /1/members/[idMember or username]/[field][¶](index.html.md#get-1-members-idmember-or-username-field)
+## GET /1/members/[member_id or username]/[field][¶](index.html.md#get-1-members-idmember-or-username-field)
 
   * **Arguments**
     * `field` (required)
@@ -576,7 +576,7 @@
         * `uploadedAvatarHash`
         * `premiumFeatures`
 
-## GET /1/members/[idMember or username]/actions[¶](index.html.md#get-1-members-idmember-or-username-actions)
+## GET /1/members/[member_id or username]/actions[¶](index.html.md#get-1-members-idmember-or-username-actions)
 
   * **Required permissions:** read
   * **Arguments**
@@ -775,7 +775,7 @@
     }]
 ```
 
-## GET /1/members/[idMember or username]/boardBackgrounds[¶](index.html.md#get-1-members-idmember-or-username-boardbackgrounds)
+## GET /1/members/[member_id or username]/boardBackgrounds[¶](index.html.md#get-1-members-idmember-or-username-boardbackgrounds)
 
   * **Required permissions:** read, own
   * **Arguments**
@@ -788,7 +788,7 @@
         * `custom`
         * `all`
 
-## GET /1/members/[idMember or username]/boardBackgrounds/[idBoardBackground][¶](index.html.md#get-1-members-idmember-or-username-boardbackgrounds-idboardbackground)
+## GET /1/members/[member_id or username]/boardBackgrounds/[background_id][¶](index.html.md#get-1-members-idmember-or-username-boardbackgrounds-idboardbackground)
 
   * **Required permissions:** read, own, customBoardBackgrounds
   * **Arguments**
@@ -802,12 +802,12 @@
         * `scaled`
         * `tile`
 
-## GET /1/members/[idMember or username]/boardStars[¶](index.html.md#get-1-members-idmember-or-username-boardstars)
+## GET /1/members/[member_id or username]/boardStars[¶](index.html.md#get-1-members-idmember-or-username-boardstars)
 
   * **Required permissions:** read, own
   * **Arguments:** None
 
-## GET /1/members/[idMember or username]/boards[¶](index.html.md#get-1-members-idmember-or-username-boards)
+## GET /1/members/[member_id or username]/boards[¶](index.html.md#get-1-members-idmember-or-username-boards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1086,7 +1086,7 @@
     }]
 ```
 
-## GET /1/members/[idMember or username]/boards/[filter][¶](index.html.md#get-1-members-idmember-or-username-boards-filter)
+## GET /1/members/[member_id or username]/boards/[filter][¶](index.html.md#get-1-members-idmember-or-username-boards-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -1100,7 +1100,7 @@
         * `unpinned`
         * `starred`
 
-## GET /1/members/[idMember or username]/boardsInvited[¶](index.html.md#get-1-members-idmember-or-username-boardsinvited)
+## GET /1/members/[member_id or username]/boardsInvited[¶](index.html.md#get-1-members-idmember-or-username-boardsinvited)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1127,7 +1127,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/members/[idMember or username]/boardsInvited/[field][¶](index.html.md#get-1-members-idmember-or-username-boardsinvited-field)
+## GET /1/members/[member_id or username]/boardsInvited/[field][¶](index.html.md#get-1-members-idmember-or-username-boardsinvited-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1153,7 +1153,7 @@
         * `dateLastView`
         * `shortUrl`
 
-## GET /1/members/[idMember or username]/cards[¶](index.html.md#get-1-members-idmember-or-username-cards)
+## GET /1/members/[member_id or username]/cards[¶](index.html.md#get-1-members-idmember-or-username-cards)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1300,7 +1300,7 @@
         * `subscribed`
         * `url`
 
-## GET /1/members/[idMember or username]/cards/[filter][¶](index.html.md#get-1-members-idmember-or-username-cards-filter)
+## GET /1/members/[member_id or username]/cards/[filter][¶](index.html.md#get-1-members-idmember-or-username-cards-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -1311,7 +1311,7 @@
         * `closed`
         * `all`
 
-## GET /1/members/[idMember or username]/customBoardBackgrounds[¶](index.html.md#get-1-members-idmember-or-username-customboardbackgrounds)
+## GET /1/members/[member_id or username]/customBoardBackgrounds[¶](index.html.md#get-1-members-idmember-or-username-customboardbackgrounds)
 
   * **Required permissions:** read, own, customBoardBackgrounds
   * **Arguments**
@@ -1321,7 +1321,7 @@
         * `none`
         * `all`
 
-## GET /1/members/[idMember or username]/customBoardBackgrounds/[idBoardBackground][¶](index.html.md#get-1-members-idmember-or-username-customboardbackgrounds-idboardbackground)
+## GET /1/members/[member_id or username]/customBoardBackgrounds/[background_id][¶](index.html.md#get-1-members-idmember-or-username-customboardbackgrounds-idboardbackground)
 
   * **Required permissions:** read, own, customBoardBackgrounds
   * **Arguments**
@@ -1335,7 +1335,7 @@
         * `scaled`
         * `tile`
 
-## GET /1/members/[idMember or username]/customEmoji[¶](index.html.md#get-1-members-idmember-or-username-customemoji)
+## GET /1/members/[member_id or username]/customEmoji[¶](index.html.md#get-1-members-idmember-or-username-customemoji)
 
   * **Notes:** This gets the list of all of the user's uploaded emoji
   * **Required permissions:** read, own, customEmoji
@@ -1346,7 +1346,7 @@
         * `none`
         * `all`
 
-## GET /1/members/[idMember or username]/customEmoji/[idCustomEmoji][¶](index.html.md#get-1-members-idmember-or-username-customemoji-idcustomemoji)
+## GET /1/members/[member_id or username]/customEmoji/[emoji_id][¶](index.html.md#get-1-members-idmember-or-username-customemoji-idcustomemoji)
 
   * **Required permissions:** read, own, customEmoji
   * **Arguments**
@@ -1358,7 +1358,7 @@
         * `url`
         * `name`
 
-## GET /1/members/[idMember or username]/customStickers[¶](index.html.md#get-1-members-idmember-or-username-customstickers)
+## GET /1/members/[member_id or username]/customStickers[¶](index.html.md#get-1-members-idmember-or-username-customstickers)
 
   * **Notes:** This gets a list of all of the user's uploaded stickers
   * **Required permissions:** read, own, customStickers
@@ -1369,7 +1369,7 @@
         * `none`
         * `all`
 
-## GET /1/members/[idMember or username]/customStickers/[idCustomSticker][¶](index.html.md#get-1-members-idmember-or-username-customstickers-idcustomsticker)
+## GET /1/members/[member_id or username]/customStickers/[sticker_id][¶](index.html.md#get-1-members-idmember-or-username-customstickers-idcustomsticker)
 
   * **Required permissions:** read, own, customStickers
   * **Arguments**
@@ -1381,7 +1381,7 @@
         * `url`
         * `scaled`
 
-## GET /1/members/[idMember or username]/notifications[¶](index.html.md#get-1-members-idmember-or-username-notifications)
+## GET /1/members/[member_id or username]/notifications[¶](index.html.md#get-1-members-idmember-or-username-notifications)
 
   * **Notes:** You can only read the notifications for the member associated with the supplied token
   * **Required permissions:** read, own
@@ -1466,7 +1466,7 @@
         * `url`
         * `username`
 
-## GET /1/members/[idMember or username]/notifications/[filter][¶](index.html.md#get-1-members-idmember-or-username-notifications-filter)
+## GET /1/members/[member_id or username]/notifications/[filter][¶](index.html.md#get-1-members-idmember-or-username-notifications-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -1499,7 +1499,7 @@
         * `declinedInvitationToOrganization`
         * `memberJoinedTrello`
 
-## GET /1/members/[idMember or username]/organizations[¶](index.html.md#get-1-members-idmember-or-username-organizations)
+## GET /1/members/[member_id or username]/organizations[¶](index.html.md#get-1-members-idmember-or-username-organizations)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1588,7 +1588,7 @@
     }]
 ```
 
-## GET /1/members/[idMember or username]/organizations/[filter][¶](index.html.md#get-1-members-idmember-or-username-organizations-filter)
+## GET /1/members/[member_id or username]/organizations/[filter][¶](index.html.md#get-1-members-idmember-or-username-organizations-filter)
 
   * **Arguments**
     * `filter` (required)
@@ -1598,7 +1598,7 @@
         * `public`
         * `all`
 
-## GET /1/members/[idMember or username]/organizationsInvited[¶](index.html.md#get-1-members-idmember-or-username-organizationsinvited)
+## GET /1/members/[member_id or username]/organizationsInvited[¶](index.html.md#get-1-members-idmember-or-username-organizationsinvited)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1621,7 +1621,7 @@
         * `logoHash`
         * `premiumFeatures`
 
-## GET /1/members/[idMember or username]/organizationsInvited/[field][¶](index.html.md#get-1-members-idmember-or-username-organizationsinvited-field)
+## GET /1/members/[member_id or username]/organizationsInvited/[field][¶](index.html.md#get-1-members-idmember-or-username-organizationsinvited-field)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1643,7 +1643,7 @@
         * `logoHash`
         * `premiumFeatures`
 
-## GET /1/members/[idMember or username]/tokens[¶](index.html.md#get-1-members-idmember-or-username-tokens)
+## GET /1/members/[member_id or username]/tokens[¶](index.html.md#get-1-members-idmember-or-username-tokens)
 
   * **Required permissions:** read, own, account
   * **Arguments**
@@ -1653,7 +1653,7 @@
         * `none`
         * `all`
 
-## PUT /1/members/[idMember or username][¶](index.html.md#put-1-members-idmember-or-username)
+## PUT /1/members/[member_id or username][¶](index.html.md#put-1-members-idmember-or-username)
 
   * **Required permissions:** read
   * **Arguments**
@@ -1677,7 +1677,7 @@
     * `prefs/minutesBetweenSummaries` (optional)
       * **Valid Values:** -1 (disabled), 1 or 60
 
-## PUT /1/members/[idMember or username]/avatarSource[¶](index.html.md#put-1-members-idmember-or-username-avatarsource)
+## PUT /1/members/[member_id or username]/avatarSource[¶](index.html.md#put-1-members-idmember-or-username-avatarsource)
 
   * **Required permissions:** write
   * **Arguments**
@@ -1687,14 +1687,14 @@
         * `upload`
         * `gravatar`
 
-## PUT /1/members/[idMember or username]/bio[¶](index.html.md#put-1-members-idmember-or-username-bio)
+## PUT /1/members/[member_id or username]/bio[¶](index.html.md#put-1-members-idmember-or-username-bio)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** a string with a length from `0` to `16384`
 
-## PUT /1/members/[idMember or username]/boardBackgrounds/[idBoardBackground][¶](index.html.md#put-1-members-idmember-or-username-boardbackgrounds-idboardbackground)
+## PUT /1/members/[member_id or username]/boardBackgrounds/[background_id][¶](index.html.md#put-1-members-idmember-or-username-boardbackgrounds-idboardbackground)
 
   * **Required permissions:** write, customBoardBackgrounds
   * **Arguments**
@@ -1710,7 +1710,7 @@
         * `dark`
         * `unknown`
 
-## PUT /1/members/[idMember or username]/boardStars/[idBoardStar][¶](index.html.md#put-1-members-idmember-or-username-boardstars-idboardstar)
+## PUT /1/members/[member_id or username]/boardStars/[boardstar_id][¶](index.html.md#put-1-members-idmember-or-username-boardstars-idboardstar)
 
   * **Required permissions:** write, account
   * **Arguments**
@@ -1719,7 +1719,7 @@
     * `pos` (required)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## PUT /1/members/[idMember or username]/customBoardBackgrounds/[idBoardBackground][¶](index.html.md#put-1-members-idmember-or-username-customboardbackgrounds-idboardbackground)
+## PUT /1/members/[member_id or username]/customBoardBackgrounds/[background_id][¶](index.html.md#put-1-members-idmember-or-username-customboardbackgrounds-idboardbackground)
 
   * **Required permissions:** write, customBoardBackgrounds
   * **Arguments**
@@ -1735,21 +1735,21 @@
         * `dark`
         * `unknown`
 
-## PUT /1/members/[idMember or username]/fullName[¶](index.html.md#put-1-members-idmember-or-username-fullname)
+## PUT /1/members/[member_id or username]/fullName[¶](index.html.md#put-1-members-idmember-or-username-fullname)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A string with a length of at least 4. Cannot begin or end with a space.
 
-## PUT /1/members/[idMember or username]/initials[¶](index.html.md#put-1-members-idmember-or-username-initials)
+## PUT /1/members/[member_id or username]/initials[¶](index.html.md#put-1-members-idmember-or-username-initials)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A string with a length from 1 to 4. Cannot begin or end with a space
 
-## PUT /1/members/[idMember or username]/prefs/colorBlind[¶](index.html.md#put-1-members-idmember-or-username-prefs-colorblind)
+## PUT /1/members/[member_id or username]/prefs/colorBlind[¶](index.html.md#put-1-members-idmember-or-username-prefs-colorblind)
 
   * **Required permissions:** write
   * **Arguments**
@@ -1758,35 +1758,35 @@
         * `true`
         * `false`
 
-## PUT /1/members/[idMember or username]/prefs/minutesBetweenSummaries[¶](index.html.md#put-1-members-idmember-or-username-prefs-minutesbetweensummaries)
+## PUT /1/members/[member_id or username]/prefs/minutesBetweenSummaries[¶](index.html.md#put-1-members-idmember-or-username-prefs-minutesbetweensummaries)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** -1 (disabled), 1 or 60
 
-## PUT /1/members/[idMember or username]/username[¶](index.html.md#put-1-members-idmember-or-username-username)
+## PUT /1/members/[member_id or username]/username[¶](index.html.md#put-1-members-idmember-or-username-username)
 
   * **Required permissions:** write
   * **Arguments**
     * `value` (required)
       * **Valid Values:** A string with a length of at least 3. Only lowercase letters, underscores, and numbers are allowed. Must be unique.
 
-## POST /1/members/[idMember or username]/avatar[¶](index.html.md#post-1-members-idmember-or-username-avatar)
+## POST /1/members/[member_id or username]/avatar[¶](index.html.md#post-1-members-idmember-or-username-avatar)
 
   * **Required permissions:** own
   * **Arguments**
     * `file` (required)
       * **Valid Values:** A file
 
-## POST /1/members/[idMember or username]/boardBackgrounds[¶](index.html.md#post-1-members-idmember-or-username-boardbackgrounds)
+## POST /1/members/[member_id or username]/boardBackgrounds[¶](index.html.md#post-1-members-idmember-or-username-boardbackgrounds)
 
   * **Required permissions:** write, customBoardBackgrounds
   * **Arguments**
     * `file` (required)
       * **Valid Values:** A file
 
-## POST /1/members/[idMember or username]/boardStars[¶](index.html.md#post-1-members-idmember-or-username-boardstars)
+## POST /1/members/[member_id or username]/boardStars[¶](index.html.md#post-1-members-idmember-or-username-boardstars)
 
   * **Required permissions:** write, account, own
   * **Arguments**
@@ -1795,14 +1795,14 @@
     * `pos` (required)
       * **Valid Values:** A position. `top`, `bottom`, or a positive number.
 
-## POST /1/members/[idMember or username]/customBoardBackgrounds[¶](index.html.md#post-1-members-idmember-or-username-customboardbackgrounds)
+## POST /1/members/[member_id or username]/customBoardBackgrounds[¶](index.html.md#post-1-members-idmember-or-username-customboardbackgrounds)
 
   * **Required permissions:** write, customBoardBackgrounds
   * **Arguments**
     * `file` (required)
       * **Valid Values:** A file
 
-## POST /1/members/[idMember or username]/customEmoji[¶](index.html.md#post-1-members-idmember-or-username-customemoji)
+## POST /1/members/[member_id or username]/customEmoji[¶](index.html.md#post-1-members-idmember-or-username-customemoji)
 
   * **Required permissions:** write, customEmoji
   * **Arguments**
@@ -1811,63 +1811,63 @@
     * `name` (required)
       * **Valid Values:** a string with a length from `2` to `64`
 
-## POST /1/members/[idMember or username]/customStickers[¶](index.html.md#post-1-members-idmember-or-username-customstickers)
+## POST /1/members/[member_id or username]/customStickers[¶](index.html.md#post-1-members-idmember-or-username-customstickers)
 
   * **Required permissions:** write, customStickers
   * **Arguments**
     * `file` (required)
       * **Valid Values:** A file
 
-## POST /1/members/[idMember or username]/idBoardsPinned[¶](index.html.md#post-1-members-idmember-or-username-idboardspinned)
+## POST /1/members/[member_id or username]/idBoardsPinned[¶](index.html.md#post-1-members-idmember-or-username-idboardspinned)
 
   * **Required permissions:** write, account
   * **Arguments**
     * `value` (required)
       * **Valid Values:** The id of the board to pin
 
-## POST /1/members/[idMember or username]/oneTimeMessagesDismissed[¶](index.html.md#post-1-members-idmember-or-username-onetimemessagesdismissed)
+## POST /1/members/[member_id or username]/oneTimeMessagesDismissed[¶](index.html.md#post-1-members-idmember-or-username-onetimemessagesdismissed)
 
   * **Required permissions:** own, trello.com
   * **Arguments**
     * `value` (required)
       * **Valid Values:** Type of message dismissed
 
-## POST /1/members/[idMember or username]/unpaidAccount[¶](index.html.md#post-1-members-idmember-or-username-unpaidaccount)
+## POST /1/members/[member_id or username]/unpaidAccount[¶](index.html.md#post-1-members-idmember-or-username-unpaidaccount)
 
   * **Required permissions:** own, write
   * **Arguments**
     * `products` (required)
       * **Valid Values:** An array of product ids
 
-## DELETE /1/members/[idMember or username]/boardBackgrounds/[idBoardBackground][¶](index.html.md#delete-1-members-idmember-or-username-boardbackgrounds-idboardbackground)
+## DELETE /1/members/[member_id or username]/boardBackgrounds/[background_id][¶](index.html.md#delete-1-members-idmember-or-username-boardbackgrounds-idboardbackground)
 
   * **Required permissions:** write, own, customBoardBackgrounds
   * **Arguments**
     * `idBoardBackground` (required)
       * **Valid Values:** An id
 
-## DELETE /1/members/[idMember or username]/boardStars/[idBoardStar][¶](index.html.md#delete-1-members-idmember-or-username-boardstars-idboardstar)
+## DELETE /1/members/[member_id or username]/boardStars/[boardstar_id][¶](index.html.md#delete-1-members-idmember-or-username-boardstars-idboardstar)
 
   * **Required permissions:** write, own, account
   * **Arguments**
     * `idBoardStar` (required)
       * **Valid Values:** The id of the board star to delete
 
-## DELETE /1/members/[idMember or username]/customBoardBackgrounds/[idBoardBackground][¶](index.html.md#delete-1-members-idmember-or-username-customboardbackgrounds-idboardbackground)
+## DELETE /1/members/[member_id or username]/customBoardBackgrounds/[background_id][¶](index.html.md#delete-1-members-idmember-or-username-customboardbackgrounds-idboardbackground)
 
   * **Required permissions:** write, own, customBoardBackgrounds
   * **Arguments**
     * `idBoardBackground` (required)
       * **Valid Values:** An id
 
-## DELETE /1/members/[idMember or username]/customStickers/[idCustomSticker][¶](index.html.md#delete-1-members-idmember-or-username-customstickers-idcustomsticker)
+## DELETE /1/members/[member_id or username]/customStickers/[sticker_id][¶](index.html.md#delete-1-members-idmember-or-username-customstickers-idcustomsticker)
 
   * **Required permissions:** write, own, customStickers
   * **Arguments**
     * `idCustomSticker` (required)
       * **Valid Values:** An id
 
-## DELETE /1/members/[idMember or username]/idBoardsPinned/[idBoard][¶](index.html.md#delete-1-members-idmember-or-username-idboardspinned-idboard)
+## DELETE /1/members/[member_id or username]/idBoardsPinned/[board_id][¶](index.html.md#delete-1-members-idmember-or-username-idboardspinned-idboard)
 
   * **Required permissions:** write, account
   * **Arguments**
